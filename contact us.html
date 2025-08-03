@@ -1,0 +1,541 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" type="text/css"
+  href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./css/responsive.css" />
+</head>
+
+<body>
+  <header class="header-container">
+    <div class="top-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">hcp</div>
+            </div>
+            
+            <div class="company-info">
+                <h1 class="company-name">HCP Wellness PVT. LTD.</h1>
+                <div class="company-tagline">Ranked #1 Top Cosmetic Manufacturer in India | 20+ years in Industry</div>
+                <div class="custom-manufacture">
+                    <span class="manufacture-icon">📋</span>
+                    <span class="manufacture-text">Custom Manufacture :</span>
+                </div>
+                <p class="company-description">
+                    Skin Care, Body Care, cosmetics, oral care-toothpaste, mouthwash, hair care-shampoo conditioners, animals pet care
+                </p>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="#contact" class="btn btn-contact">Contact us</a>
+                <a href="#chat" class="btn btn-chat">Chat Now</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ABOUT US</a>
+                </li>
+                <li class="nav-item dropdown" id="productDropdown">
+                    <a href="#" class="nav-link dropdown-toggle active">PRODUCT RANGE</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">ORAL CARE / TOOTHPASTE</a>
+                        <a href="#" class="dropdown-item">COSMETIC & SKIN CARE</a>
+                        <a href="#" class="dropdown-item">HAIR CARE PRODUCTS</a>
+                        <a href="#" class="dropdown-item">PET CARE PRODUCTS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">PRIVATE LABEL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">OUR BRANDS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">MANUFACTURING</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CAREERS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Demo Content -->
+<div style="padding: 50px 20px; max-width: 1200px; margin: 0 auto; text-align: center;">
+    <h2 style="color: #1f2937; margin-bottom: 20px;">Welcome to HCP Wellness</h2>
+    <p style="color: #6b7280; line-height: 1.6; max-width: 800px; margin: 0 auto;">
+        Leading cosmetic manufacturer in India with over 20 years of experience in creating high-quality products for skin care, body care, oral care, hair care, and pet care industries.
+    </p>
+</div>
+<main>
+  <div class="contact-banner">
+    <img src="./image//contact-banner (1).png "alt="img">
+  </div>
+        <!-- form submit  -->
+        <div class="form-sec">
+          <div class="container">
+            <div class="form-inner">
+              <div class="form-left">
+                <div class="form-title">
+                  <h4>let’s get in touch</h4>
+                  <p>Reach out to us today to elevate your brand with our expert cosmetic manufacturing services.</p>
+                </div>
+                <div class="form-addres">
+                  <div class="form-contry">
+                    <img src="./image/india-map.png" alt="img">
+                    <p>India</p>
+                  </div>
+                  <ul class="form-call">
+                    <li>
+                      <div class="call-img">
+                        <img src="./image/fi_1483285.svg" alt="img">
+                      </div>
+                      <div class="call-num">
+                        <a href="tel:+919723455627">+91 12345 78998</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="call-img">
+                        <img src="./image/fi_1483285.svg" alt="img">
+                      </div>
+                      <div class="call-num">
+                        <a href="mailto:info@hcpwellness.in">info@hcpwellness.in</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="call-img">
+                        <img src="./image/fi_1483285.svg" alt="img">
+                      </div>
+                      <div class="call-num">
+                        <a href="https://maps.app.goo.gl/gUiLde7yzQS83EYR6" target="_blank">403, Maruti Vertex Elanza, Opp.
+                          Global Hospital, Sindhu Bhavan Road, Bodakdev, Ahmedabad-380054, Gujarat, India.</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="form-right">
+                <h2 class="form-title">Hey! There</h2>
+                <form id="contactForm">
+                  <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Enter Name*" required>
+                  </div>
+      
+                  <div class="form-row">
+                    <div class="form-group">
+                      <input type="email" id="email" name="email" placeholder="Enter Email*" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number*" required>
+                    </div>
+                  </div>
+      
+                  <div class="form-row">
+                    <div class="form-group">
+                      <input type="text" id="company" name="company" placeholder="Enter Company">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" id="city" name="city" placeholder="Enter City*" required>
+                    </div>
+                  </div>
+      
+                  <div class="form-group">
+                    <textarea id="requirement" name="requirement" placeholder="Brief about your requirement"></textarea>
+                  </div>
+      
+                  <div class="recaptcha-container">
+                    <div class="recaptcha-mock" onclick="toggleRecaptcha()">
+                      <div class="recaptcha-checkbox" id="recaptcha-check"></div>
+                      <span>I'm not a robot</span>
+                      <div class="recaptcha-logo">
+                        <div>reCAPTCHA</div>
+                        <div style="font-size: 8px;">Privacy - Terms</div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <button type="submit" class="submit-btn">SEND US</button>
+                </form>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-right">
+        <div class="logo-img">
+          <img src="./image/shampoo.svg" alt="logo">
+        </div>
+        <div class="footer-content">
+          <p>403, Maruti Vertex Elanza, Opp. Global Hospital, Sindhu Bhavan Road, Bodakdev, Ahmedabad-380054, Gujarat,
+            India.</p>
+        </div>
+        <div class="social-icon">
+          <div class="social-icon-img">
+            <img src="./image/shampoo.svg" alt="img">
+          </div>
+          <div class="social-icon-img">
+            <img src="./image/shampoo.svg" alt="img">
+          </div>
+          <div class="social-icon-img">
+            <img src="./image/shampoo.svg" alt="img">
+          </div>
+          <div class="social-icon-img">
+            <img src="./image/shampoo.svg" alt="img">
+          </div>
+        </div>
+      </div>
+      <div class="footer-left">
+        <div class="footer-left-menu">
+          <h6>Category</h6>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </div>
+        <div class="footer-left-menu">
+          <h6>Category</h6>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </div>
+        <div class="footer-left-menu">
+          <h6>Category</h6>
+          <div class="location">
+            <div class="location-img">
+              <img src="./image/shampoo.svg" alt="location">
+            </div>
+            <p>Schanzenstrasse 4c, 3008 Bern Schweiz</p>
+          </div>
+          <div class="location phone">
+            <div class="location-img">
+              <img src="./image/shampoo.svg" alt="location">
+            </div>
+            <p>Schanzenstrasse 4c, 3008 Bern Schweiz</p>
+          </div>
+          <div class="location email">
+            <div class="location-img">
+              <img src="./image/shampoo.svg" alt="location">
+            </div>
+            <p>Schanzenstrasse 4c, 3008 Bern Schweiz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="copyright-right">
+        <p>© 2025 NorthBot All Rights Reserved</p>
+      </div>
+      <div class="copyright-left">
+        <a href="#">Terms & conditions</a>
+        <a href="#">Terms & conditions</a>
+        <a href="#">Terms & conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".banner-nner").slick({
+      dots: true,
+      arrows: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      prevArrow: '<button type="button" class="slick-prev">←</button>',
+      nextArrow: '<button type="button" class="slick-next">→</button>',
+    });
+  });
+</script>
+<!-- faq  -->
+<script>
+
+
+
+$(document).ready(function() {
+            $(".acc-set > a").on("click", function() {
+              if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+                $(this)
+                  .siblings(".acc-content")
+                  .slideUp(200);
+                $(".acc-set > a i")
+                  .removeClass("ac-fa-minus")
+                  .addClass("ac-fa-plus");
+              } else {
+                $(".acc-set > a i")
+                  .removeClass("ac-fa-minus")
+                  .addClass("ac-fa-plus");
+                $(this)
+                  .find("i")
+                  .removeClass("ac-fa-plus")
+                  .addClass("ac-fa-minus");
+                $(".acc-set > a").removeClass("active");
+                $(this).addClass("active");
+                $(".acc-content").slideUp(200);
+                $(this)
+                  .siblings(".acc-content")
+                  .slideDown(200);
+              }
+            });
+          });
+
+
+           // form
+    let recaptchaChecked = false;
+  
+  function toggleRecaptcha() {
+      const checkbox = document.getElementById('recaptcha-check');
+      recaptchaChecked = !recaptchaChecked;
+      
+      if (recaptchaChecked) {
+          checkbox.classList.add('checked');
+      } else {
+          checkbox.classList.remove('checked');
+      }
+  }
+
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      if (!recaptchaChecked) {
+          alert('Please verify that you are not a robot.');
+          return;
+      }
+      
+      // Get form data
+      const formData = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          mobile: document.getElementById('mobile').value,
+          company: document.getElementById('company').value,
+          city: document.getElementById('city').value,
+          requirement: document.getElementById('requirement').value
+      };
+      
+      // Simulate form submission
+      alert('Thank you for your message! We will get back to you soon.');
+      console.log('Form Data:', formData);
+      
+      // Reset form
+      this.reset();
+      recaptchaChecked = false;
+      document.getElementById('recaptcha-check').classList.remove('checked');
+  });
+  // navbar 
+  let isMenuOpen = false;
+
+function toggleMobileMenu() {
+    const navMenu = document.getElementById('navMenu');
+    const toggleButton = document.querySelector('.mobile-menu-toggle');
+    
+    isMenuOpen = !isMenuOpen;
+    
+    if (isMenuOpen) {
+        navMenu.classList.add('active');
+        toggleButton.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    } else {
+        navMenu.classList.remove('active');
+        toggleButton.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+        
+        // Close any open dropdowns
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
+    }
+}
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(event) {
+    const navMenu = document.getElementById('navMenu');
+    const toggleButton = document.querySelector('.mobile-menu-toggle');
+    const navbar = document.querySelector('.navbar');
+    
+    // Check if click is outside navbar
+    if (!navbar.contains(event.target) && isMenuOpen) {
+        toggleMobileMenu();
+    }
+});
+
+// Handle dropdown clicks on mobile
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdown = this.parentNode;
+            const isActive = dropdown.classList.contains('active');
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown').forEach(otherDropdown => {
+                if (otherDropdown !== dropdown) {
+                    otherDropdown.classList.remove('active');
+                }
+            });
+            
+            // Toggle current dropdown
+            if (isActive) {
+                dropdown.classList.remove('active');
+            } else {
+                dropdown.classList.add('active');
+            }
+        }
+    });
+});
+
+// Close mobile menu when window is resized to desktop
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768 && isMenuOpen) {
+        toggleMobileMenu();
+    }
+});
+
+// Handle dropdown on desktop hover
+document.querySelectorAll('.dropdown').forEach(dropdown => {
+    dropdown.addEventListener('mouseenter', function() {
+        if (window.innerWidth > 768) {
+            this.classList.add('hover');
+        }
+    });
+    
+    dropdown.addEventListener('mouseleave', function() {
+        if (window.innerWidth > 768) {
+            this.classList.remove('hover');
+        }
+    });
+});
+
+// Add scroll effect to header
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header-container');
+    if (window.scrollY > 100) {
+        header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.15)';
+    } else {
+        header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
+    }
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+            
+            // Close mobile menu if open
+            if (isMenuOpen) {
+                toggleMobileMenu();
+            }
+        }
+    });
+});
+
+// Prevent menu from closing when clicking inside dropdown
+document.querySelectorAll('.dropdown-menu').forEach(menu => {
+    menu.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+});
+
+// Initialize page
+document.addEventListener('DOMContentLoaded', function() {
+    // Remove loading class if present
+    const navMenu = document.getElementById('navMenu');
+    navMenu.classList.remove('loading');
+    
+    // Set initial state
+    isMenuOpen = false;
+});
+
+// faqs 
+
+document.addEventListener('DOMContentLoaded', function() {
+            // Add any additional interactive features here if needed
+            console.log('Product accordion loaded with hover functionality');
+            
+            // Optional: Add click functionality for mobile devices
+            const accSets = document.querySelectorAll('.acc-set');
+            
+            accSets.forEach(accSet => {
+                const link = accSet.querySelector('a');
+                const content = accSet.querySelector('.acc-content');
+                
+                // For mobile touch devices, add click functionality
+                if (window.innerWidth <= 768) {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                        // Toggle current accordion
+                        accSet.classList.toggle('mobile-active');
+                        
+                        // Close other accordions
+                        accSets.forEach(otherAccSet => {
+                            if (otherAccSet !== accSet) {
+                                otherAccSet.classList.remove('mobile-active');
+                            }
+                        });
+                    });
+                }
+            });
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            // Remove mobile classes on desktop
+            if (window.innerWidth > 768) {
+                document.querySelectorAll('.acc-set').forEach(accSet => {
+                    accSet.classList.remove('mobile-active');
+                });
+            }
+        });
+
+</script>
+</body>
+
+</html>
