@@ -15,10 +15,11 @@
 
 <body>
   <header class="header-container">
+    <div class="container">
     <div class="top-header">
       <div class="header-content">
         <div class="logo-section">
-          <div class="logo">KUKU</div>
+          <div class="logo"><img src="./image/KUKU COSMETICS (1).svg" alt="logo"></div>
         </div>
         <div class="company-info">
           <h1 class="company-name">KUKU Cosmetics</h1>
@@ -38,33 +39,79 @@
         </div>
       </div>
     </div>
-
-    <nav class="navbar">
-      <div class="nav-container">
-        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" id="toggleButton">☰</button>
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li class="dropdown">
-            <a href="#">Product Range</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Face Care</a></li>
-              <li><a href="#">Hair Care</a></li>
-              <li><a href="#">Body Care</a></li>
-              <li><a href="#">Men's Grooming</a></li>
+    </div>
+   
+  <nav>
+    <ul id="main-menu">
+      <li><a href="index.html">Home</a></li>
+      <li onclick="toggleSubmenu(event)">
+        <a href="#">Products ▾</a>
+        <ul>
+          <li onclick="toggleSubmenu(event)">
+            <a href="product face care.html">Face Care ▸</a>
+            <ul>
+              <li><a href="Face peel.html">Face Serum</a></li>
+              <li><a href="Sunscreen lotion.html">Sunscreen Lotion</a></li>
+              <li><a href="Face Cream.html">Face Cream</a></li>
+              <li><a href="Face Wash.html">Face Wash</a></li>
+              <li><a href="Face toner.html">Face Toner</a></li>
+              <li><a href="Face gel.html">Face Gel</a></li>
+              <li><a href="Under eye gel.html">Under eye gel</a></li>
+              <li><a href="Face peel.html">Face peel</a></li>
             </ul>
           </li>
-          <li><a href="#">Private Label</a></li>
-          <li><a href="#">Contact</a></li>
+          <li onclick="toggleSubmenu(event)">
+            <a href="Hair Care.html">Hair Care ▸</a>
+            <ul>
+              <li><a href="Shampoo.html">Shampoo</a></li>
+              <li><a href="Sunscreen lotion.html">Sunscreen Lotion</a></li>
+              <li><a href="Conditioner.html">Conditioner</a></li>
+              <li><a href="Hair Serum.html">Hair Serum</a></li>
+              <li><a href="Hair oil.html">Hair oil</a></li>
+            </ul>
+          </li>
+          <li onclick="toggleSubmenu(event)">
+            <a href="Body Care.html">Body Care ▸</a>
+            <ul>
+              <li><a href="Body Wash.html">Body Wash</a></li>
+              <li><a href="Body spray.html">Body spray</a></li>
+              <li><a href="Body sunscreen spray.html">Body sunscreen spray</a></li>
+              <li><a href="Mosquito repellent cream.html">Mosquito repellent cream</a></li>
+              <li><a href="Lotion.html">Lotion</a></li>
+            </ul>
+          </li>
+          <li onclick="toggleSubmenu(event)">
+            <a href="Personal Care.html">Personal Care ▸</a>
+            <ul>
+              <li><a href="Under Arm Roller.html">Under Arm Roller</a></li>
+              <li><a href="Intimate hygine spray.html">Intimate hygiene spray</a></li>
+              <li><a href="Intimate hygine wash.html">Intimate hygiene wash</a></li>
+            </ul>
+          </li>
+          <li onclick="toggleSubmenu(event)">
+            <a href="Mens Grooming.html">Men's Grooming ▸</a>
+            <ul>
+              <li><a href="Beard Oil.html">Beard Oil</a></li>
+              <li><a href="Beard Wash.html">Beard Wash</a></li>
+              <li><a href="Beard Wax.html">Beard Wax (Strong Hold)</a></li>
+            </ul>
+          </li>
         </ul>
-      </div>
-    </nav>
+      </li>
+      <li><a href="manufacturing.html">Manufacturing</a></li>
+      <li><a href="privetLable.html">Private Label</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+
   </header>
   
 
 <!-- Demo Content -->
 <div style="padding: 50px 20px; max-width: 1200px; margin: 0 auto; text-align: center;">
-    <h2 style="color: #1f2937; margin-bottom: 20px;">Welcome to HCP Wellness</h2>
+    <h2 style="color: #1f2937; margin-bottom: 20px;">Welcome to KUKU Cosmetics
+    </h2>
     <p style="color: #6b7280; line-height: 1.6; max-width: 800px; margin: 0 auto;">
         Leading cosmetic manufacturer in India with over 20 years of experience in creating high-quality products for skin care, body care, oral care, hair care, and pet care industries.
     </p>
@@ -747,41 +794,18 @@
 <!-- faq  -->
 <script>
 // menu 
-function toggleMobileMenu() {
-    const menu = document.getElementById('navMenu');
-    const btn = document.getElementById('toggleButton');
-    const isOpen = menu.classList.toggle('show');
-    btn.textContent = isOpen ? '✕' : '☰';
-  }
-// menu end 
-$(document).ready(function() {
-            $(".acc-set > a").on("click", function() {
-              if ($(this).hasClass("active")) {
-                $(this).removeClass("active");
-                $(this)
-                  .siblings(".acc-content")
-                  .slideUp(200);
-                $(".acc-set > a i")
-                  .removeClass("ac-fa-minus")
-                  .addClass("ac-fa-plus");
-              } else {
-                $(".acc-set > a i")
-                  .removeClass("ac-fa-minus")
-                  .addClass("ac-fa-plus");
-                $(this)
-                  .find("i")
-                  .removeClass("ac-fa-plus")
-                  .addClass("ac-fa-minus");
-                $(".acc-set > a").removeClass("active");
-                $(this).addClass("active");
-                $(".acc-content").slideUp(200);
-                $(this)
-                  .siblings(".acc-content")
-                  .slideDown(200);
-              }
-            });
-          });
+function toggleMenu() {
+      const menu = document.getElementById("main-menu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
 
+    function toggleSubmenu(e) {
+      if (window.innerWidth <= 768) {
+        e.stopPropagation(); // Prevents parent toggle
+        const li = e.currentTarget;
+        li.classList.toggle("open");
+      }
+    }
 
            // form
     let recaptchaChecked = false;

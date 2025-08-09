@@ -285,4 +285,39 @@ h1 {
 
   
 
-  
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background: #f9f9f9;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li ul,
+  nav ul li ul li ul {
+    position: static;
+    display: none;
+    background: #e0e0e0;
+  }
+
+  nav ul li.open > ul {
+    display: flex;
+  }
+
+  nav ul li ul li.open > ul {
+    display: flex;
+  }
+
+  nav ul li:hover > ul,
+  nav ul li ul li:hover > ul {
+    display: none;
+  }
+}
