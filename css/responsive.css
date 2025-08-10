@@ -101,6 +101,9 @@ width: 46%;
 .form-right {
     width: 50%;
 }
+.company-info{
+  display: none;
+}
 }
 
 @media (max-width: 768px) {
@@ -460,11 +463,14 @@ margin-top: 20px;
   }
 
   .header-spacing {
-      padding-top: 280px;
+      padding-top: 90px;
+  }
+  .company-info , .action-buttons{
+    display: none;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 510px) {
   .container {
       padding: 0 15px;
   }
@@ -500,4 +506,8 @@ margin-top: 20px;
   .header-spacing {
       padding-top: 320px;
   }
+  .service-content-rght{
+    grid-template-columns: 1fr;
+  }
+
 }
