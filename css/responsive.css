@@ -114,6 +114,33 @@ width: 46%;
 .company-info{
   display: none;
 }
+.service-content{
+  column-gap: 20px;
+}
+.service-content-left {
+  width: calc(45% - 20px);
+}
+.service-content-rght {
+  width: 55%;
+}
+.service-content-rghttext p {
+  margin: 10px 0;
+}
+.service-content-rght-item .service-content-rghttext {
+padding: 10px;
+}
+.service-content-rghttext p {
+  font-size: 12px;
+}
+.one-column-content , .two-column-sec{
+  padding-bottom: 30px;
+}
+.three-column-sec{
+  padding: 50px 0;
+}
+.privet-lab{
+  padding-top: 50px;
+}
 }
 
 @media (max-width: 768px) {
@@ -308,15 +335,11 @@ width: 46%;
 
   .mnufacturering-plant-list-right {
     width: 100%;
-    padding-top: 40px;
     padding-left:0;
   }
 
   .mnufacturering-plant-list-right::before {
-    top: 13px;
-    left: 112px;
-    width: 465px;
-    transform: rotate(90deg);
+  display: none;
   }
   .faq-wrap-right, .faq-wrap-center{
     width: 100%;
@@ -344,6 +367,49 @@ margin-top: 20px;
 }
 .form-title h4 , .form-title p{
   color: #fff;
+}
+.manufacturering-plant-title h2 {
+  margin-bottom: 20px;
+}
+.our-plant{
+  padding: 0;
+}
+.our-plant-right h2{
+  margin: 20px 0;
+}
+
+.manufacturering-plant , .accredtation-sec {
+  padding: 40px 0;
+}
+.research{
+padding-bottom: 40px;
+}
+.accredtation-left , .accredtation-right , .research-left , .research-right{
+  width: 100%;
+}
+.accredtation-left{
+  order: 2;
+}
+.accredtation-right , .research-right{
+  padding: 0;
+}
+.accredtation-left h3{
+  margin-bottom: 20px;
+}
+.accredtation-left , .research-right{
+  margin-top: 20px;
+}
+.one-column-content-inner h2, .one-column-content-inner p{
+  margin-bottom: 20px;
+}
+.two-column-img , .two-column-content{
+  width: 100%;
+}
+.two-column-img{
+margin-top: 40px;
+}
+.contact-banner{
+  padding: 40px 0;
 }
 }
 

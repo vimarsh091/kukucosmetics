@@ -1282,6 +1282,9 @@ width: 100%;
 height: auto;
 padding: 50px 0;
 }
+.privet-baner-inner img{
+  width: 100%;
+}
 .one-column-content{
 padding-bottom: 100px ;
 }
@@ -1299,6 +1302,9 @@ width: calc(55% - 40px);
 }
 .two-column-img {
 width: 45%;
+}
+.two-column-img img{
+width: 100%;
 }
 .two-column-content h2{
 margin-bottom: 20px;
@@ -1436,7 +1442,7 @@ padding-left: 70px;
 }
 .accredtation-iner{
 display:flex;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 }
 
 .research{
@@ -1444,7 +1450,7 @@ padding-bottom: 70px;
 }
 .research-inner{
 display: flex;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 align-items: end;
 }
 .research-left{
@@ -1459,6 +1465,9 @@ padding-left: 70px;
 }
 .contact-banner{
 padding: 70px 0;
+}
+.contact-banner img{
+  width: 100%;
 }
 
 
@@ -1531,4 +1540,7 @@ z-index: 1;
 
 nav ul li ul li:hover > ul {
 display: flex;
+}
+.two-column-content p{
+  margin-bottom: 20px;
 }
