@@ -15,81 +15,105 @@
 </head>
 
 <body>
-  <header class="header-container">
-    <div class="top-header">
-        <div class="header-content">
-            <div class="logo-section">
-                <div class="logo">hcp</div>
-            </div>
-            
-            <div class="company-info">
-                <h1 class="company-name">HCP Wellness PVT. LTD.</h1>
-                <div class="company-tagline">Ranked #1 Top Cosmetic Manufacturer in India | 20+ years in Industry</div>
-                <div class="custom-manufacture">
-                    <span class="manufacture-icon">📋</span>
-                    <span class="manufacture-text">Custom Manufacture :</span>
-                </div>
-                <p class="company-description">
-                    Skin Care, Body Care, cosmetics, oral care-toothpaste, mouthwash, hair care-shampoo conditioners, animals pet care
-                </p>
-            </div>
-            
-            <div class="action-buttons">
-                <a href="#contact" class="btn btn-contact">Contact us</a>
-                <a href="#chat" class="btn btn-chat">Chat Now</a>
-            </div>
-        </div>
-    </div>
-
-    <nav class="navbar">
-        <div class="nav-container">
-            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
-                <span class="hamburger"></span>
-            </button>
-            
-            <ul class="nav-menu" id="navMenu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">ABOUT US</a>
-                </li>
-                <li class="nav-item dropdown" id="productDropdown">
-                    <a href="#" class="nav-link dropdown-toggle active">PRODUCT RANGE</a>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">ORAL CARE / TOOTHPASTE</a>
-                        <a href="#" class="dropdown-item">COSMETIC & SKIN CARE</a>
-                        <a href="#" class="dropdown-item">HAIR CARE PRODUCTS</a>
-                        <a href="#" class="dropdown-item">PET CARE PRODUCTS</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">PRIVATE LABEL</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">OUR BRANDS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">MANUFACTURING</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">CAREERS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">CONTACT US</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+  <div class="header-spacing">
+    <header class="header-container">
+      <div class="container">
+          <div class="top-header">
+              <div class="header-content">
+                  <div class="logo-section">
+                      <div class="logo">
+                        <a href="index.html" class="logo">
+                            <img src="./image/colored_logo.png" alt="KUKU Cosmetics Logo">
+                          </a>
+                      </div>
+                  </div>
+                  <div class="company-info">
+                      <div class="company-tagline">
+                          <p>Natural Beauty, Bold Confidence Cosmetic Manufacturing & Private Labeling</p>
+                      </div>
+                      <p class="company-description">
+                          Face care, Body care, Hair care, Personal care & Men's grooming products
+                          crafted for quality & confidence.
+                      </p>
+                  </div>
+                  <div class="action-buttons">
+                      <a href="contact us.html" class="btn btn-contact">Contact Us</a>
+                      <a href="#chat" class="btn btn-chat">Chat Now</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <nav>
+          <div class="container">
+              <ul id="main-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li onclick="toggleSubmenu(event)">
+                      <a href="#">Products ▾</a>
+                      <ul>
+                          <li onclick="toggleSubmenu(event)">
+                              <a href="product face care.html">Face Care ▸</a>
+                              <ul>
+                                  <li><a href="Face peel.html">Face Serum</a></li>
+                                  <li><a href="Sunscreen lotion.html">Sunscreen Lotion</a></li>
+                                  <li><a href="Face Cream.html">Face Cream</a></li>
+                                  <li><a href="Face Wash.html">Face Wash</a></li>
+                                  <li><a href="Face toner.html">Face Toner</a></li>
+                                  <li><a href="Face gel.html">Face Gel</a></li>
+                                  <li><a href="Under eye gel.html">Under eye gel</a></li>
+                                  <li><a href="Face peel.html">Face peel</a></li>
+                              </ul>
+                          </li>
+                          <li onclick="toggleSubmenu(event)">
+                              <a href="Hair Care.html">Hair Care ▸</a>
+                              <ul>
+                                  <li><a href="Shampoo.html">Shampoo</a></li>
+                                  <li><a href="Sunscreen lotion.html">Sunscreen Lotion</a></li>
+                                  <li><a href="Conditioner.html">Conditioner</a></li>
+                                  <li><a href="Hair Serum.html">Hair Serum</a></li>
+                                  <li><a href="Hair oil.html">Hair oil</a></li>
+                              </ul>
+                          </li>
+                          <li onclick="toggleSubmenu(event)">
+                              <a href="Body Care.html">Body Care ▸</a>
+                              <ul>
+                                  <li><a href="Body Wash.html">Body Wash</a></li>
+                                  <li><a href="Body spray.html">Body spray</a></li>
+                                  <li><a href="Body sunscreen spray.html">Body sunscreen spray</a></li>
+                                  <li><a href="Mosquito repellent cream.html">Mosquito repellent cream</a></li>
+                                  <li><a href="Lotion.html">Lotion</a></li>
+                              </ul>
+                          </li>
+                          <li onclick="toggleSubmenu(event)">
+                              <a href="Personal Care.html">Personal Care ▸</a>
+                              <ul>
+                                  <li><a href="Under Arm Roller.html">Under Arm Roller</a></li>
+                                  <li><a href="Intimate hygine spray.html">Intimate hygiene spray</a></li>
+                                  <li><a href="Intimate hygine wash.html">Intimate hygiene wash</a></li>
+                              </ul>
+                          </li>
+                          <li onclick="toggleSubmenu(event)">
+                              <a href="Mens Grooming.html">Men's Grooming ▸</a>
+                              <ul>
+                                  <li><a href="Beard Oil.html">Beard Oil</a></li>
+                                  <li><a href="Beard Wash.html">Beard Wash</a></li>
+                                  <li><a href="Beard Wax.html">Beard Wax (Strong Hold)</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                  <li><a href="manufacturing.html">Manufacturing</a></li>
+                  <li><a href="privetLable.html">Private Label</a></li>
+                  <li><a href="contact us.html">Contact</a></li>
+              </ul>
+              <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">☰</div>
+          </div>
+      </nav>
+  </header>
+  </div>
 
 <!-- Demo Content -->
-<div style="padding: 50px 20px; max-width: 1200px; margin: 0 auto; text-align: center;">
-    <h2 style="color: #1f2937; margin-bottom: 20px;">Welcome to HCP Wellness</h2>
-    <p style="color: #6b7280; line-height: 1.6; max-width: 800px; margin: 0 auto;">
-        Leading cosmetic manufacturer in India with over 20 years of experience in creating high-quality products for skin care, body care, oral care, hair care, and pet care industries.
-    </p>
-</div>
+
 <main>
     <!-- banner-sec  -->
     <div class="privet-baner-sec">
