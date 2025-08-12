@@ -48,6 +48,12 @@ width: 46%;
   .process-content{
     grid-template-columns: repeat(8, 1fr);
   }
+  .three-column-left-content {
+    width: calc(41.33% - 60px);
+}
+.three-column-inner{
+  column-gap: 30px;
+}
 }
 
 @media (max-width: 1024px) {
@@ -140,6 +146,9 @@ padding: 10px;
 }
 .privet-lab{
   padding-top: 50px;
+}
+nav ul{
+  column-gap: 30px;
 }
 }
 
@@ -410,6 +419,15 @@ margin-top: 40px;
 }
 .contact-banner{
   padding: 40px 0;
+}
+.three-column-left-content , .three-column-right-content{
+width: 100%;
+}
+.three-column-center-img{
+  width: 40%;
+  margin: 0 auto;
+  padding: 40px 0;
+  height: auto;
 }
 }
 
