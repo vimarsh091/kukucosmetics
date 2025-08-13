@@ -429,6 +429,14 @@ width: 100%;
   padding: 40px 0;
   height: auto;
 }
+.process-content{
+         row-gap: 10px;
+}
+.process-content-inner:nth-child(even) .process-content-img::after {
+  content: '';
+  top: 25px;
+  right: 11px;
+}
 }
 
 @media (max-width: 480px) {
@@ -472,7 +480,7 @@ width: 100%;
   }
 
   .process-content {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
