@@ -2,1048 +2,1103 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Home page</title>
-<link rel="icon" type="image/png" href="image/favicon.svg">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-<link rel="stylesheet" type="text/css"
-href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home page</title>
+  <link rel="icon" type="image/png" href="image/favicon.svg">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-<link rel="stylesheet" href="./css/style.css" />
-<link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
 </head>
 
 <body>
-<div class="header-spacing">
-<header class="header-container">
-<div class="container">
-    <div class="top-header">
-        <div class="header-content">
+  <div class="header-spacing">
+    <header class="header-container">
+      <div class="container">
+        <div class="top-header">
+          <div class="header-content">
             <div class="logo-section">
-                <div class="logo">
-                  <a href="index.html" class="logo">
-                      <img src="./image/colored_logo.png" alt="KUKU Cosmetics Logo">
-                    </a>
-                </div>
+              <div class="logo">
+                <a href="index.html" class="logo">
+                  <img src="./image/colored_logo.png" alt="KUKU Cosmetics Logo">
+                </a>
+              </div>
             </div>
             <div class="company-info">
-                <div class="company-tagline">
-                    <p>Natural Beauty, Bold Confidence Cosmetic Manufacturing & Private Labeling</p>
-                </div>
-                <p class="company-description">
-                    Face care, Body care, Hair care, Personal care & Men's grooming products
-                    crafted for quality & confidence.
-                </p>
+              <div class="company-tagline">
+                <p>Natural Beauty, Bold Confidence Cosmetic Manufacturing & Private Labeling</p>
+              </div>
+              <p class="company-description">
+                Face care, Body care, Hair care, Personal care & Men's grooming products
+                crafted for quality & confidence.
+              </p>
             </div>
             <div class="action-buttons">
-                <a href="contact us.html" class="btn btn-contact">Contact Us</a>
-                <a href="#chat" class="btn btn-chat">Chat Now</a>
+              <a href="contact us.html" class="btn btn-contact">Contact Us</a>
+              <a href="#chat" class="btn btn-chat">Chat Now</a>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
-<nav>
-    <div class="container">
-        <ul id="main-menu">
+      <nav>
+        <div class="container">
+          <ul id="main-menu">
             <li><a href="index.html">Home</a></li>
             <li onclick="toggleSubmenu(event)">
-                <a href="#">Products ▾</a>
-                <ul>
+              <a href="#">Products ▾</a>
+              <ul>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Face Care ▸</a>
+                  <ul>
                     <li onclick="toggleSubmenu(event)">
-                        <a href="#">Face Care ▸</a>
-                        <ul>
-                            <li><a href="Face peel.html">Face Serum</a></li>
-                            <li><a href="Sunscreen lotion.html">Sunscreen Lotion</a></li>
-                            <li><a href="Face Cream.html">Face Cream</a></li>
-                            <li><a href="Face Wash.html">Face Wash</a></li>
-                            <li><a href="Face toner.html">Face Toner</a></li>
-                            <li><a href="Face gel.html">Face Gel</a></li>
-                            <li><a href="Under eye gel.html">Under eye gel</a></li>
-                            <li><a href="Face peel.html">Face peel</a></li>
-                        </ul>
+                      <a href="#">Face Wash ▸</a>
+                      <ul>
+                        <li>
+                        <li><a href="Face Wash.html">Waterless face wash </a>
+                        </li>
+                      </ul>
                     </li>
+                    <li><a href="Face peel.html">Face Serum</a></li>
                     <li onclick="toggleSubmenu(event)">
-                        <a href="#">Hair Care ▸</a>
-                        <ul>
-                            <li><a href="Shampoo.html">Shampoo</a></li>
-                            <li><a href="Sunscreen lotion.html">Sunscreen Lotion</a></li>
-                            <li><a href="Conditioner.html">Conditioner</a></li>
-                            <li><a href="Hair Serum.html">Hair Serum</a></li>
-                            <li><a href="Hair oil.html">Hair oil</a></li>
-                        </ul>
+                      <a href="#">Sunscreen Lotion ▸</a>
+                      <ul>
+                        <li onclick="toggleSubmenu(event)">
+                          <a href="#">invisible sunscreen spf 50 -75</a>
+                        </li>
+                      </ul>
                     </li>
-                    <li onclick="toggleSubmenu(event)">
-                        <a href="#">Body Care ▸</a>
-                        <ul>
-                            <li><a href="Body Wash.html">Body Wash</a></li>
-                            <li><a href="Body spray.html">Body spray</a></li>
-                            <li><a href="Body sunscreen spray.html">Body sunscreen spray</a></li>
-                            <li><a href="Mosquito repellent cream.html">Mosquito repellent cream</a></li>
-                            <li><a href="Lotion.html">Lotion</a></li>
-                        </ul>
-                    </li>
-                    <li onclick="toggleSubmenu(event)">
-                        <a href="#">Personal Care ▸</a>
-                        <ul>
-                            <li><a href="Under Arm Roller.html">Under Arm Roller</a></li>
-                            <li><a href="Intimate hygine spray.html">Intimate hygiene spray</a></li>
-                            <li><a href="Intimate hygine wash.html">Intimate hygiene wash</a></li>
-                        </ul>
-                    </li>
-                    <li onclick="toggleSubmenu(event)">
-                        <a href="#">Men's Grooming ▸</a>
-                        <ul>
-                            <li><a href="Beard Oil.html">Beard Oil</a></li>
-                            <li><a href="Beard Wash.html">Beard Wash</a></li>
-                            <li><a href="Beard Wax.html">Beard Wax (Strong Hold)</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                    <li><a href="Sunscreen lotion.html">Sunscreen Lotion</a></li>
+                    <li><a href="Face Cream.html">Face Cream</a></li>
+                    <li><a href="Face toner.html">Face Toner</a></li>
+                    <li><a href="Face gel.html">Face Gel</a></li>
+                    <li><a href="Under eye gel.html">Under eye gel</a></li>
+                    <li><a href="Face peel.html">Face peel</a></li>
+                  </ul>
+                </li>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Hair Care ▸</a>
+                  <ul>
+                    <li><a href="Shampoo.html">Shampoo</a></li>
+                    <li><a href="Conditioner.html">Conditioner</a></li>
+                    <li><a href="Hair Serum.html">Hair Serum</a></li>
+                    <li><a href="Hair oil.html">Hair oil</a></li>
+                  </ul>
+                </li>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Intimate Care ▸</a>
+                  <ul>
+                    <li><a href="Lube Gel.html">Lube Gel</a></li>
+                    <li><a href="Beard Wash.html">Menstrual Cup Lubricant</a></li>
+                    <li><a href="Beard Wax.html"> Intimate Foam Wash</a></li>
+                    <li><a href="Beard Wax.html">Intimate Gel Wash</a></li>
+                    <li><a href="Beard Wax.html">Menstrual Cup Wash</a></li>
+                    <li><a href="Beard Wax.html">Intimate Whitening Cream</a></li>
+                    <li><a href="Beard Wax.html">Breast Tightening Cream</a></li>
+                    <li><a href="Beard Wax.html">Penis Tightening Cream</a></li>
+                    <li><a href="Beard Wax.html">Penis Whitening Cream</a></li>
+                    <li><a href="Beard Wax.html">Vaginal Tightening Cream</a></li>
+                    <li><a href="Beard Wax.html">Stretch Mark Oil/Cream</a></li>
+                    <li><a href="Beard Wax.html">Intimate Moisturizing Oil</a></li>
+                    <li><a href="Beard Wax.html"> Breast Tightening Oil </a></li>
+                  </ul>
+                </li>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Body Care ▸</a>
+                  <ul>
+                    <li><a href="Body Wash.html">Body Wash</a></li>
+                    <li><a href="Body spray.html">Body spray</a></li>
+                    <li><a href="Body sunscreen spray.html">Body sunscreen spray</a></li>
+                    <li><a href="Mosquito repellent cream.html">Mosquito repellent cream</a></li>
+                    <li><a href="Lotion.html">Lotion</a></li>
+                  </ul>
+                </li>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Personal Care ▸</a>
+                  <ul>
+                    <li><a href="Under Arm Roller.html">Underarms Roller</a></li>
+                    <li><a href="Intimate hygine spray.html">Underarms Whitening Serum </a></li>
+                    <li><a href="Intimate hygine wash.html">Foot Crame </a></li>
+                    <li><a href="Intimate hygine wash.html"> Lip balm </a></li>
+                  </ul>
+                </li>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Men's Grooming ▸</a>
+                  <ul>
+                    <li><a href="Beard Oil.html">Beard Oil</a></li>
+                    <li><a href="Beard Wash.html">Beard Wash</a></li>
+                    <li><a href="Beard Wax.html">Beard Wax (Strong Hold)</a></li>
+                  </ul>
+                </li>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Baby Care ▸</a>
+                  <!-- <ul>
+                    <li><a href="Beard Oil.html">Beard Oil</a></li>
+                    <li><a href="Beard Wash.html">Beard Wash</a></li>
+                    <li><a href="Beard Wax.html">Beard Wax (Strong Hold)</a></li>
+                  </ul> -->
+                </li>
+              </ul>
             </li>
             <li><a href="manufacturing.html">Manufacturing</a></li>
             <li><a href="privetLable.html">Private Label</a></li>
             <li><a href="contact us.html">Contact</a></li>
-        </ul>
-        <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">☰</div>
-    </div>
-</nav>
-</header>
-</div>
-
-<!-- Demo Content -->
-<div style="padding: 50px 20px; max-width: 1200px; margin: 0 auto; text-align: center;">
-<h2 style="color: #1f2937; margin-bottom: 20px;">Welcome to KUKU Cosmetics
-</h2>
-<p style="color: #6b7280; line-height: 1.6; max-width: 800px; margin: 0 auto;">
-KUKU Cosmetics is a growing Indian startup dedicated to crafting high-quality personal care products. Our range
-includes skin care, body care, oral care, and hair care solutions designed to nourish and protect. We combine
-innovation with safe, effective ingredients to support everyday beauty and wellness.
-</p>
-</div>
-
-<main>
-<!-- banner  -->
-<div class="banner-sec">
-<div class="container">
-  <div class="banner-nner">
-    <div class="banner-item">
-      <div class="banner-content">
-        <h1>
-          INNOVATIVE COSMETIC MANUFACTURER & PRIVATE LABEL PARTNER IN INDIA
-        </h1>
-        <p>Proudly serving trusted skincare, haircare, bodycare, and oral care brands.
-          KUKU Cosmetics is a fast-growing startup with a vision to deliver safe, effective, and customized
-          personal care solutions.
-          Backed by years of formulation expertise and modern manufacturing capabilities.</p>
-        <div class="secondry-btn">
-          <a href="">Click Here</a>
+          </ul>
+          <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">☰</div>
         </div>
-      </div>
-      <div class="banner-img">
-        <img src="./image/02.svg" alt="img" />
-      </div>
-    </div>
-    <div class="banner-item">
-      <div class="banner-content">
-        <h1>
-          BUILD YOUR BRAND WITH KUKU COSMETICS
-        </h1>
-        <p>Your trusted partner for private label skin, hair, oral, and body care products.
-          Crafted with quality, driven by innovation, and made in India.
-        </p>
-        <div class="secondry-btn">
-          <a href="">Click Here</a>
-        </div>
-      </div>
-      <div class="banner-img">
-        <img src="./image/03.svg" alt="img" />
-      </div>
-    </div>
-    <div class="banner-item">
-      <div class="banner-content">
-        <h1>
-          PREMIUM PERSONAL CARE MANUFACTURER IN INDIA
-        </h1>
-        <p>From idea to shelf, KUKU Cosmetics develops high-quality products for skincare, haircare, oral care,
-          and body care brands.
-          We offer flexible private label solutions backed by quality, consistency, and customer trust.
-        </p>
-        <div class="secondry-btn">
-          <a href="">Click Here</a>
-        </div>
-      </div>
-      <div class="banner-img">
-        <img src="./image/04.svg" alt="img" />
-      </div>
-    </div>
-    <div class="banner-item">
-      <div class="banner-content">
-        <h1>
-          YOUR PRIVATE LABEL COSMETIC PARTNER FOR TOMORROW
-        </h1>
-        <p>At KUKU Cosmetics, we help brands grow with custom formulations and world-class manufacturing.
-          Whether you</p>
-        <div class="secondry-btn">
-          <a href="">Click Here</a>
-        </div>
-      </div>
-      <div class="banner-img">
-        <img src="./image/05.svg" alt="img" />
-      </div>
-    </div>
+      </nav>
+    </header>
   </div>
-</div>
-</div>
-<!-- products  -->
-<div class="product-img">
-<div class="container">
-  <div class="product-img-inner">
-    <div class="product-img-title">
-      <h2>Product</h2>
-      <p>
-        At KUKU Cosmetics, we proudly formulate and manufacture all products in-house — ensuring complete
-        control over quality, consistency, and innovation. From skincare to hair care, every product is crafted
-        with precision and care.
-      </p>
 
-      <p>
-        Our range includes high-performance solutions across face care, body care, hair care, oral care, and men’s
-        grooming. With a focus on safe, effective ingredients and modern manufacturing, we deliver excellence that
-        reflects our brand’s values — natural, trusted, and proudly made in India.
-      </p>
-      <p>
-        KUKU Cosmetics is a self-manufacturing company dedicated to producing high-quality personal care products. With complete in-house production, we ensure consistent quality across skincare, body care, hair care, and more — crafted with precision, care, and commitment.
-      </p>
-
-    </div>
-
-    <div class="customWidthOption  faq-section faq-wrap">
-      <div class="accordion-container faq-wrap-right">
-
-          <div class="acc-set">
-            <a href="javascript:void(0);">
-              <h5>FACE CARE</h5>
-              <div class="product-item_img">
-              <img src="./image/face-serum-manufacturer-icon.svg" alt="img">
-              </div>
-            </a>
-            <ul class="acc-content">
-              <li><a href="Face Serum.html">Face Serum</a></li>
-              <li><a href="Sunscreen lotion.html">Sunscreen lotion</a></li>
-              <li><a href="Face Cream.html">Face Cream</a></li>
-              <li><a href="Face Wash.html">Face Wash</a></li>
-              <li><a href="Face gel.html">Face gel</a></li>
-              <li><a href="Under eye gel.html">Under eye gel</a></li>
-              <li><a href="Face peel.html">Face peel</a></li>
-            </ul>
-          </div>
-          <div class="acc-set">
-            <a href="javascript:void(0);">
-              <h5>BODY CARE</h5>
-              <div class="product-item_img">
-                <img src="./image/skin-care-cosmetic-manufacturer-icon.svg" alt="img">
-              </div>
-            </a>
-            <ul class="acc-content">
-              <li><a href="Body Wash.html">Body Wash</a></li>
-              <li><a href="Body spray.html">Body spray</a></li>
-              <li><a href="Body sunscreen spray.html">Body sunscreen spray</a></li>
-              <li><a href="Mosquito repellent cream.html">Mosquito repellent cream</a></li>
-              <li><a href="Lotion.html">Lotion</a></li>
-            </ul>
-          </div>
-          <div class="acc-set">
-            <a href="javascript:void(0);">
-              <h5>MEN'S GROOMING</h5>
-              <div class="product-item_img">
-                <img src="./image/face-sheet-mask-manufacturer-icon-1.svg" alt="img">
-              </div>
-            </a>
-            <ul class="acc-content">
-              <li><a href="Beard Oil.html">Beard Oil</a></li>
-              <li><a href="Beard Wash.html">Beard Wash</a></li>
-              <li><a href="Beard Wax.html">Beard Wax (Strong Hold)</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="faq-wrap-center">
-        
-          <div class="acc-set">
-            <a href="javascript:void(0);">
-              <h5>HAIR CARE</h5>
-              <div class="product-item_img">
-                <img src="./image/hair-care-manufacturer-icon.svg" alt="img">
-              </div>
-            </a>
-            <ul class="acc-content">
-              <li><a href="Shampoo.html">Shampoo</a></li>
-              <li><a href="Conditioner.html">Conditioner</a></li>
-              <li><a href="Hair Serum.html">Hair Serum</a></li>
-              <li><a href="Hair oil.html">Hair oil</a></li>
-            </ul>
-          </div>
-          <div class="acc-set">
-            <a href="javascript:void(0);">
-              <h5>PERSONAL CARE</h5>
-              <div class="product-item_img">
-                <img src="./image/nutraceutical-manufacturer-Icon.svg" alt="img">
-              </div>
-            </a>
-            <ul class="acc-content">
-              <li><a href="Under Arm Roller.html">Under Arm Roller</a></li>
-              <li><a href="Intimate hygine spray.html">Intimate hygiene spray</a></li>
-              <li><a href="Intimate hygine wash.html">Intimate hygiene wash</a></li>
-            </ul>
-          </div>
-        </div>
-
-        </div>
-   <!--  <div class="faq-wrap">
-      <div class="">
-        <div class="acc-set">
-          <a href="javascript:void(0);">
-            <h5>FACE CARE</h5>
-            <div class="product-item_img">
-            <img src="./image/face-serum-manufacturer-icon.svg" alt="img">
-            </div>
-          </a>
-          <ul class="acc-content">
-            <li><a href="Face Serum.html">Face Serum</a></li>
-            <li><a href="Sunscreen lotion.html">Sunscreen lotion</a></li>
-            <li><a href="Face Cream.html">Face Cream</a></li>
-            <li><a href="Face Wash.html">Face Wash</a></li>
-            <li><a href="Face gel.html">Face gel</a></li>
-            <li><a href="Under eye gel.html">Under eye gel</a></li>
-            <li><a href="Face peel.html">Face peel</a></li>
-          </ul>
-        </div>
-
-
-        <div class="acc-set">
-          <a href="javascript:void(0);">
-            <h5>BODY CARE</h5>
-            <div class="product-item_img">
-              <img src="./image/skin-care-cosmetic-manufacturer-icon.svg" alt="img">
-            </div>
-          </a>
-          <ul class="acc-content">
-            <li><a href="Body Wash.html">Body Wash</a></li>
-            <li><a href="Body spray.html">Body spray</a></li>
-            <li><a href="Body sunscreen spray.html">Body sunscreen spray</a></li>
-            <li><a href="Mosquito repellent cream.html">Mosquito repellent cream</a></li>
-            <li><a href="Lotion.html">Lotion</a></li>
-          </ul>
-        </div>
-        
-        <div class="acc-set">
-          <a href="javascript:void(0);">
-            <h5>MEN'S GROOMING</h5>
-            <div class="product-item_img">
-              <img src="./image/face-sheet-mask-manufacturer-icon-1.svg" alt="img">
-            </div>
-          </a>
-          <ul class="acc-content">
-            <li><a href="Beard Oil.html">Beard Oil</a></li>
-            <li><a href="Beard Wash.html">Beard Wash</a></li>
-            <li><a href="Beard Wax.html">Beard Wax (Strong Hold)</a></li>
-          </ul>
-        </div>
-
-        
-      </div>
-
-        <div class="faq-wrap-center">
-        
-
-        <div class="acc-set">
-          <a href="javascript:void(0);">
-            <h5>HAIR CARE</h5>
-            <div class="product-item_img">
-              <img src="./image/hair-care-manufacturer-icon.svg" alt="img">
-            </div>
-          </a>
-          <ul class="acc-content">
-            <li><a href="Shampoo.html">Shampoo</a></li>
-            <li><a href="Conditioner.html">Conditioner</a></li>
-            <li><a href="Hair Serum.html">Hair Serum</a></li>
-            <li><a href="Hair oil.html">Hair oil</a></li>
-          </ul>
-        </div>
-
-        
-
-        <div class="acc-set">
-          <a href="javascript:void(0);">
-            <h5>PERSONAL CARE</h5>
-            <div class="product-item_img">
-              <img src="./image/nutraceutical-manufacturer-Icon.svg" alt="img">
-            </div>
-          </a>
-          <ul class="acc-content">
-            <li><a href="Under Arm Roller.html">Under Arm Roller</a></li>
-            <li><a href="Intimate hygine spray.html">Intimate hygiene spray</a></li>
-            <li><a href="Intimate hygine wash.html">Intimate hygiene wash</a></li>
-          </ul>
-        </div>
-
-        
-      </div>
-    </div>-->
-  </div>
-</div>
-</div>
-<!-- services -->
-<div class="service">
-<div class="container">
-  <div class="service-inner">
-    <div class="service-title">
-      <h2>Our Services</h2>
-      <p>
-        Experience the ease of building your brand with KUKU Cosmetics — a trusted name in private label cosmetic
-        manufacturing. We offer complete solutions across skin care, hair care, oral care, and body care, ensuring
-        your products are crafted with precision, safety, and innovation.
-      </p>
-      <p>
-        Whether you're launching a new brand or scaling an existing one, our team supports you from concept to
-        shelf. With flexible OEM/ODM services, in-house formulation, and modern manufacturing, KUKU Cosmetics
-        helps your vision come to life — beautifully.
-      </p>
-    </div>
-
-    <div class="service-content">
-      <div class="service-content-left">
-        <div class="service-content-leftimg">
-          <img src="./image/private-label-cosmetics-manufacturers-services.svg" alt="img" />
-        </div>
-        <div class="service-content-lefttext">
-          <h5>Your satisfaction, our main service.</h6>
-            <h4>
-              Ensuring client and end user satisfaction is our priority
-            </h4>
-            <p>
-              From skincare to oral care, we prioritize client and
-              end-user satisfaction. Whether your idea or ready-made
-              formulation, we’re dedicated to your contentment.
-            </p>
-            <a href="#">Read More</a>
-        </div>
-      </div>
-      <div class="service-content-rght">
-        <div class="service-content-rght-item">
-          <div class="service-content-rghtimg">
-            <img src="./image/face_care.jpg" alt="img" />
-          </div>
-          <div class="service-content-rghttext">
-            <h4>Face Care</h4>
-            <p>
-              "KUKU Cosmetics delivers high-quality face care solutions for healthy, radiant skin."
-              
-            </p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-        <div class="service-content-rght-item">
-          <div class="service-content-rghtimg">
-            <img src="./image/hair_care.jpg" alt="img" />
-          </div>
-          <div class="service-content-rghttext">
-            <h4>Hair Care</h4>
-            <p>
-              "KUKU Cosmetics delivers premium hair care solutions that nourish from root to tip, giving you strong, shiny, and healthy hair."
-            </p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-        <div class="service-content-rght-item">
-          <div class="service-content-rghtimg">
-            <img src="./image/body_care.svg" alt="img" />
-          </div>
-          <div class="service-content-rghttext">
-            <h4>Body Care</h4>
-            <p>
-              "KUKU Cosmetics offers gentle yet effective body care that hydrates, smooths, and enhances your skin’s natural glow."
-            </p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-        <div class="service-content-rght-item">
-          <div class="service-content-rghtimg">
-            <img src="./image/personal_care.svg" alt="img" />
-          </div>
-          <div class="service-content-rghttext">
-            <h4>Personal Care</h4>
-            <p>
-              "KUKU Cosmetics ensures daily freshness and confidence with safe, effective personal care products for all-d
-            </p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!-- process  -->
-<div class="process-sec">
-<div class="container">
-  <div class="process-inner">
-    <div class="process-title">
-      <h2>Oem Process</h2>
-      <h6>Efficient, Optimized and Streamlined OEM Process</h6>
-      <p>At HCP Wellness, we extend our comprehensive services to a diverse range of clients, catering to B2B
-        businesses, D2C / DTC brands, and online sellers including Amazon and Flipkart. Whether you’re a
-        large-scale retailer or an individual entrepreneur, our cosmetic manufacturing solutions are tailored to
-        meet your specific needs, ensuring seamless production and delivery of high-quality cosmetic products to
-        your customers. </p>
-    </div>
-    <div class="process-content">
-      <div class="process-content-inner">
-        <div class="process-content-img">
-          <img src="./image/inquiry-cosmetic-manufacturer.svg" alt="img">
-        </div>
-        <div class="process-content-text">
-          <p>Inquiry</p>
-        </div>
-      </div>
-      <div class="process-content-inner">
-        <div class="process-content-img">
-          <img src="./image/sample-confirmed-skin-care-manufacturer.svg" alt="img">
-        </div>
-        <div class="process-content-text">
-          <p>Sample Confirmed</p>
-        </div>
-      </div>
-      <div class="process-content-inner">
-        <div class="process-content-img">
-          <img src="./image/pi-signed-cosmetic-product-manufacturer.svg" alt="img">
-        </div>
-        <div class="process-content-text">
-          <p>PI Signed</p>
-        </div>
-      </div>
-      <div class="process-content-inner">
-        <div class="process-content-img">
-          <img src="./image/deposit-herbal-cosmetic-manufacturer.svg" alt="img">
-        </div>
-        <div class="process-content-text">
-          <p>40% Deposit
-          </p>
-        </div>
-      </div>
-      
-      <div class="process-content-inner">
-        <div class="process-content-img">
-          <img src="./image/design-ayurvedic-cosmetic-manufacturer.svg" alt="img">
-        </div>
-        <div class="process-content-text">
-          <p>Design
-          </p>
-        </div>
-      </div>
-      <div class="process-content-inner">
-        <div class="process-content-img">
-          <img src="./image/sample-making-hair-care-product-manufacturer.svg" alt="img">
-        </div>
-        <div class="process-content-text">
-          <p>manufacturing
-          </p>
-        </div>
-      </div>
-      <div class="process-content-inner">
-        <div class="process-content-img">
-          <img src="./image/inspection-private-label-cosmetic-manufacturer.svg" alt="img">
-        </div>
-        <div class="process-content-text">
-          <p>Inspection
-          </p>
-        </div>
-      </div>
-      <div class="process-content-inner">
-        <div class="process-content-img">
-          <img src="./image/balance-third-party-cosmetic-manufacturer.svg" alt="img">
-        </div>
-        <div class="process-content-text">
-          <p>60% Balance
-
-          </p>
-        </div>
-      </div>
-      <div class="process-content-inner">
-        <div class="process-content-img">
-          <img src="./image/shipment-contract-manufacturing.svg" alt="img">
-        </div>
-        <div class="process-content-text">
-          <p>Shipment
-
-          </p>
-        </div>
-      </div>
-      <div class="process-content-inner">
-        <div class="process-content-img">
-          <img src="./image/after-sale-cosmetic-contract-manufacturer.svg" alt="img">
-        </div>
-        <div class="process-content-text">
-          <p>After Sale
-
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!-- content & img  -->
-<div class="text-title-sec">
-<div class="container">
-  <div class="text-title-inner">
-    <div class="text-title">
-      <h2>
-        Bring Unique Products And Formulations To The Market
+  <!-- Demo Content -->
+  <div class="container">
+    <div class="banner-detail">
+      <h2 style="color: #1f2937; margin-bottom: 20px;">Welcome to KUKU Cosmetics
       </h2>
-    </div>
-    <div class="text-title-wrap">
-      <div class="text-left-content-wrap">
-        <div class="text-left-content">
-          <div class="text-left-content-inner">
-            <h5>Precision Manufacturing
-            </h5>
-            <p>Our cutting-edge manufacturing systems guarantee the utmost product quality</p>
-          </div>
-          <div class="text-left-content-img">
-            <img src="./image/precision-manufacturing-icon-cosmetic-manufacturer.svg" alt="img">
-          </div>
-        </div>
-        <div class="text-left-content">
-          <div class="text-left-content-inner">
-            <h5>Premium Global Sourcing
-            </h5>
-            <p>Curated selection of over 3000 premium natural ingredients sourced globally
-            </p>
-          </div>
-          <div class="text-left-content-img">
-            <img src="./image/premium-global-sourcing-icon-herbal-cosmetic-manufacturer-1.svg" alt="img">
-          </div>
-        </div>
-        <div class="text-left-content">
-          <div class="text-left-content-inner">
-            <h5>Prompt Fulfillment
-            </h5>
-            <p>Timely delivery to meet your launch deadlines and prevent stock shortages
-            </p>
-          </div>
-          <div class="text-left-content-img">
-            <img src="./image/prompt-fulfillment-icon-oral-care-toothpaste-manufacturer.svg" alt="img">
-          </div>
-        </div>
-      </div>
-      <div class="text-title-img">
-        <img src="./image/01.svg" alt="img">
-      </div>
-      <div class="text-right-content-wrap">
-        <div class="text-left-content">
-          <div class="text-left-content-img">
-            <img src="./image/stability-assured-icon-health-and-wellness-product-manufacturer.svg" alt="img">
-          </div>
-          <div class="text-left-content-inner">
-            <h5>Stability Assured
-            </h5>
-            <p>Formulations rigorously tested for stability, ensuring optimal performance in any environment
-            </p>
-          </div>
-        </div>
-        <div class="text-left-content">
-          <div class="text-left-content-img">
-            <img src="./image/Innovate-icon-skincare-product-manufacturer.svg" alt="img">
-          </div>
-          <div class="text-left-content-inner">
-            <h5>Infuse To Innovate
-            </h5>
-            <p>Utilize innovative raw materials to set your products apart in the market
-            </p>
-          </div>
-        </div>
-        <div class="text-left-content">
-          <div class="text-left-content-img">
-            <img src="./image/regulatory-compliance-cosmetic-manufacturing.svg" alt="img">
-          </div>
-          <div class="text-left-content-inner">
-            <h5>Regulatory Compliance
-            </h5>
-            <p>Facilities compliant with GMP, ISO, and FDA standards for top-tier end-products
-            </p>
-          </div>
-        </div>
-      </div>
+      <p>
+        <strong>KUKU Cosmetics</strong> is a dynamic Indian start-up dedicated to developing high-quality personal care
+        solutions that inspire confidence and promote overall wellness.
+      </p>
+      <p>Our diverse portfolio <strong>spans skincare, body care, oral care, and hair care,</strong> each product
+        thoughtfully formulated to nourish, protect, and enhance natural beauty.</p>
+      <p>By blending <strong>innovation with safe, effective ingredients,</strong> we ensure every creation upholds the
+        highest standards of <strong>quality, safety,</strong> and <strong>performance.</strong></p>
+      <p> At KUKU Cosmetics, we believe beauty is more than appearance—it is a reflection of confidence, self-care, and
+        holistic well-being in everyday life.</p>
+
     </div>
   </div>
-</div>
-</div>
-<!-- form submit  -->
-<div class="form-sec">
-<div class="container">
-  <div class="form-inner">
-    <div class="form-left">
-      <div class="form-title">
-        <h4>let’s get in touch</h4>
-        <p>Reach out to us today to elevate your brand with our expert cosmetic manufacturing services.</p>
-      </div>
-      <div class="form-addres">
-        <div class="form-contry">
-          <img src="./image/india-map.png" alt="img">
-          <p>India</p>
+
+  <main>
+    <!-- banner  -->
+    <div class="banner-sec">
+      <div class="container">
+        <div class="banner-nner">
+          <div class="banner-item">
+            <div class="banner-content">
+              <h1>
+                INNOVATIVE COSMETIC MANUFACTURER & PRIVATE LABEL PARTNER IN INDIA
+              </h1>
+              <p>Proudly serving trusted skincare, haircare, bodycare, and oral care brands.
+                KUKU Cosmetics is a fast-growing startup with a vision to deliver safe, effective, and customized
+                personal care solutions.
+                Backed by years of formulation expertise and modern manufacturing capabilities.</p>
+              <div class="secondry-btn">
+                <a href="">Click Here</a>
+              </div>
+            </div>
+            <div class="banner-img">
+              <img src="./image/02.svg" alt="img" />
+            </div>
+          </div>
+          <div class="banner-item">
+            <div class="banner-content">
+              <h1>
+                BUILD YOUR BRAND WITH KUKU COSMETICS
+              </h1>
+              <p>Your trusted partner for private label skin, hair, oral, and body care products.
+                Crafted with quality, driven by innovation, and made in India.
+              </p>
+              <div class="secondry-btn">
+                <a href="">Click Here</a>
+              </div>
+            </div>
+            <div class="banner-img">
+              <img src="./image/03.svg" alt="img" />
+            </div>
+          </div>
+          <div class="banner-item">
+            <div class="banner-content">
+              <h1>
+                PREMIUM PERSONAL CARE MANUFACTURER IN INDIA
+              </h1>
+              <p>From idea to shelf, KUKU Cosmetics develops high-quality products for skincare, haircare, oral care,
+                and body care brands.
+                We offer flexible private label solutions backed by quality, consistency, and customer trust.
+              </p>
+              <div class="secondry-btn">
+                <a href="">Click Here</a>
+              </div>
+            </div>
+            <div class="banner-img">
+              <img src="./image/04.svg" alt="img" />
+            </div>
+          </div>
+          <div class="banner-item">
+            <div class="banner-content">
+              <h1>
+                YOUR PRIVATE LABEL COSMETIC PARTNER FOR TOMORROW
+              </h1>
+              <p>At KUKU Cosmetics, we help brands grow with custom formulations and world-class manufacturing.
+                Whether you</p>
+              <div class="secondry-btn">
+                <a href="">Click Here</a>
+              </div>
+            </div>
+            <div class="banner-img">
+              <img src="./image/05.svg" alt="img" />
+            </div>
+          </div>
         </div>
-        <ul class="form-call">
-          <li>
-            <div class="location-img call-img">
-              <img src="./image/fi_152851.png" alt="phone">
+      </div>
+    </div>
+    <!-- products  -->
+    <div class="product-img">
+      <div class="container">
+        <div class="product-img-inner">
+          <div class="product-img-title">
+            <h2>Product</h2>
+            <p>
+              At KUKU Cosmetics, we proudly formulate and manufacture all products in-house — ensuring complete
+              control over quality, consistency, and innovation. From skincare to hair care, every product is crafted
+              with precision and care.
+            </p>
+
+            <p>
+              Our range includes high-performance solutions across face care, body care, hair care, oral care, and men’s
+              grooming. With a focus on safe, effective ingredients and modern manufacturing, we deliver excellence that
+              reflects our brand’s values — natural, trusted, and proudly made in India.
+            </p>
+            <p>
+              KUKU Cosmetics is a self-manufacturing company dedicated to producing high-quality personal care products.
+              With complete in-house production, we ensure consistent quality across skincare, body care, hair care, and
+              more — crafted with precision, care, and commitment.
+            </p>
+
+          </div>
+
+          <div class="customWidthOption  faq-section faq-wrap">
+            <div class="accordion-container faq-wrap-right">
+
+              <div class="acc-set">
+                <a href="javascript:void(0);">
+                  <h5>FACE CARE</h5>
+                  <div class="product-item_img">
+                    <img src="./image/face-serum-manufacturer-icon.svg" alt="img">
+                  </div>
+                </a>
+                <ul class="acc-content">
+                  <li><a href="Face Serum.html">Face Serum</a></li>
+                  <li><a href="Sunscreen lotion.html">Sunscreen lotion</a></li>
+                  <li><a href="Face Cream.html">Face Cream</a></li>
+                  <li><a href="Face Wash.html">Face Wash</a></li>
+                  <li><a href="Face gel.html">Face gel</a></li>
+                  <li><a href="Under eye gel.html">Under eye gel</a></li>
+                  <li><a href="Face peel.html">Face peel</a></li>
+                </ul>
+              </div>
+              <div class="acc-set">
+                <a href="javascript:void(0);">
+                  <h5>BODY CARE</h5>
+                  <div class="product-item_img">
+                    <img src="./image/skin-care-cosmetic-manufacturer-icon.svg" alt="img">
+                  </div>
+                </a>
+                <ul class="acc-content">
+                  <li><a href="Body Wash.html">Body Wash</a></li>
+                  <li><a href="Body spray.html">Body spray</a></li>
+                  <li><a href="Body sunscreen spray.html">Body sunscreen spray</a></li>
+                  <li><a href="Mosquito repellent cream.html">Mosquito repellent cream</a></li>
+                  <li><a href="Lotion.html">Lotion</a></li>
+                </ul>
+              </div>
+              <div class="acc-set">
+                <a href="javascript:void(0);">
+                  <h5>MEN'S GROOMING</h5>
+                  <div class="product-item_img">
+                    <img src="./image/face-sheet-mask-manufacturer-icon-1.svg" alt="img">
+                  </div>
+                </a>
+                <ul class="acc-content">
+                  <li><a href="Beard Oil.html">Beard Oil</a></li>
+                  <li><a href="Beard Wash.html">Beard Wash</a></li>
+                  <li><a href="Beard Wax.html">Beard Wax (Strong Hold)</a></li>
+                </ul>
+              </div>
             </div>
-            <a href="tel:886-691-5181">+91 8866915181</a>
-          </li>
-          <li>
-            <div class="location-img call-img">
-              <img src="./image/fi_542689.png" alt="mail">
+            <div class="faq-wrap-center">
+
+              <div class="acc-set">
+                <a href="javascript:void(0);">
+                  <h5>HAIR CARE</h5>
+                  <div class="product-item_img">
+                    <img src="./image/hair-care-manufacturer-icon.svg" alt="img">
+                  </div>
+                </a>
+                <ul class="acc-content">
+                  <li><a href="Shampoo.html">Shampoo</a></li>
+                  <li><a href="Conditioner.html">Conditioner</a></li>
+                  <li><a href="Hair Serum.html">Hair Serum</a></li>
+                  <li><a href="Hair oil.html">Hair oil</a></li>
+                </ul>
+              </div>
+              <div class="acc-set">
+                <a href="javascript:void(0);">
+                  <h5>PERSONAL CARE</h5>
+                  <div class="product-item_img">
+                    <img src="./image/nutraceutical-manufacturer-Icon.svg" alt="img">
+                  </div>
+                </a>
+                <ul class="acc-content">
+                  <li><a href="Under Arm Roller.html">Under Arm Roller</a></li>
+                  <li><a href="Intimate hygine spray.html">Intimate hygiene spray</a></li>
+                  <li><a href="Intimate hygine wash.html">Intimate hygiene wash</a></li>
+                </ul>
+              </div>
             </div>
-            <a href="mailto:kukucosmetics25@gamil.com">kukucosmetics25@gamil.com</a>
-          </li>
-          <li>
-            <div class="call-img">
-              <img src="./image/fi_1483285.svg" alt="img">
-            </div>
-            <div class="call-num">
-              <a href="" target="_blank">328 sahitya industrial park, kujad road bakrol - bujarang - dascroi , Ahmedabad.</a>
-            </div>
-          </li>
+
+          </div>
+          <!--  <div class="faq-wrap">
+    <div class="">
+      <div class="acc-set">
+        <a href="javascript:void(0);">
+          <h5>FACE CARE</h5>
+          <div class="product-item_img">
+          <img src="./image/face-serum-manufacturer-icon.svg" alt="img">
+          </div>
+        </a>
+        <ul class="acc-content">
+          <li><a href="Face Serum.html">Face Serum</a></li>
+          <li><a href="Sunscreen lotion.html">Sunscreen lotion</a></li>
+          <li><a href="Face Cream.html">Face Cream</a></li>
+          <li><a href="Face Wash.html">Face Wash</a></li>
+          <li><a href="Face gel.html">Face gel</a></li>
+          <li><a href="Under eye gel.html">Under eye gel</a></li>
+          <li><a href="Face peel.html">Face peel</a></li>
         </ul>
       </div>
+
+
+      <div class="acc-set">
+        <a href="javascript:void(0);">
+          <h5>BODY CARE</h5>
+          <div class="product-item_img">
+            <img src="./image/skin-care-cosmetic-manufacturer-icon.svg" alt="img">
+          </div>
+        </a>
+        <ul class="acc-content">
+          <li><a href="Body Wash.html">Body Wash</a></li>
+          <li><a href="Body spray.html">Body spray</a></li>
+          <li><a href="Body sunscreen spray.html">Body sunscreen spray</a></li>
+          <li><a href="Mosquito repellent cream.html">Mosquito repellent cream</a></li>
+          <li><a href="Lotion.html">Lotion</a></li>
+        </ul>
+      </div>
+      
+      <div class="acc-set">
+        <a href="javascript:void(0);">
+          <h5>MEN'S GROOMING</h5>
+          <div class="product-item_img">
+            <img src="./image/face-sheet-mask-manufacturer-icon-1.svg" alt="img">
+          </div>
+        </a>
+        <ul class="acc-content">
+          <li><a href="Beard Oil.html">Beard Oil</a></li>
+          <li><a href="Beard Wash.html">Beard Wash</a></li>
+          <li><a href="Beard Wax.html">Beard Wax (Strong Hold)</a></li>
+        </ul>
+      </div>
+
+      
     </div>
 
-    <div class="form-right">
-      <h2 class="form-title">Hey! There</h2>
-      <form id="contactForm">
-        <div class="form-group">
-          <input type="text" id="name" name="name" placeholder="Enter Name*" required>
-        </div>
+      <div class="faq-wrap-center">
+      
 
-        <div class="form-row">
-          <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Enter Email*" required>
+      <div class="acc-set">
+        <a href="javascript:void(0);">
+          <h5>HAIR CARE</h5>
+          <div class="product-item_img">
+            <img src="./image/hair-care-manufacturer-icon.svg" alt="img">
           </div>
-          <div class="form-group">
-            <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number*" required>
-          </div>
-        </div>
+        </a>
+        <ul class="acc-content">
+          <li><a href="Shampoo.html">Shampoo</a></li>
+          <li><a href="Conditioner.html">Conditioner</a></li>
+          <li><a href="Hair Serum.html">Hair Serum</a></li>
+          <li><a href="Hair oil.html">Hair oil</a></li>
+        </ul>
+      </div>
 
-        <div class="form-row">
-          <div class="form-group">
-            <input type="text" id="company" name="company" placeholder="Enter Company">
-          </div>
-          <div class="form-group">
-            <input type="text" id="city" name="city" placeholder="Enter City*" required>
-          </div>
-        </div>
+      
 
-        <div class="form-group">
-          <textarea id="requirement" name="requirement" placeholder="Brief about your requirement"></textarea>
-        </div>
+      <div class="acc-set">
+        <a href="javascript:void(0);">
+          <h5>PERSONAL CARE</h5>
+          <div class="product-item_img">
+            <img src="./image/nutraceutical-manufacturer-Icon.svg" alt="img">
+          </div>
+        </a>
+        <ul class="acc-content">
+          <li><a href="Under Arm Roller.html">Under Arm Roller</a></li>
+          <li><a href="Intimate hygine spray.html">Intimate hygiene spray</a></li>
+          <li><a href="Intimate hygine wash.html">Intimate hygiene wash</a></li>
+        </ul>
+      </div>
 
-        <div class="recaptcha-container">
-          <div class="recaptcha-mock" onclick="toggleRecaptcha()">
-            <div class="recaptcha-checkbox" id="recaptcha-check"></div>
-            <span>I'm not a robot</span>
-            <div class="recaptcha-logo">
-              <div>reCAPTCHA</div>
-              <div style="font-size: 8px;">Privacy - Terms</div>
+      
+    </div>
+  </div>-->
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div class="service">
+      <div class="container">
+        <div class="service-inner">
+          <div class="service-title">
+            <h2>Our Services</h2>
+            <p>
+              Experience the ease of building your brand with KUKU Cosmetics — a trusted name in private label cosmetic
+              manufacturing. We offer complete solutions across skin care, hair care, oral care, and body care, ensuring
+              your products are crafted with precision, safety, and innovation.
+            </p>
+            <p>
+              Whether you're launching a new brand or scaling an existing one, our team supports you from concept to
+              shelf. With flexible OEM/ODM services, in-house formulation, and modern manufacturing, KUKU Cosmetics
+              helps your vision come to life — beautifully.
+            </p>
+          </div>
+
+          <div class="service-content">
+            <div class="service-content-left">
+              <div class="service-content-leftimg">
+                <img src="./image/private-label-cosmetics-manufacturers-services.svg" alt="img" />
+              </div>
+              <div class="service-content-lefttext">
+                <h5>Your satisfaction, our main service.</h6>
+                  <h4>
+                    Ensuring client and end user satisfaction is our priority
+                  </h4>
+                  <p>
+                    From skincare to oral care, we prioritize client and
+                    end-user satisfaction. Whether your idea or ready-made
+                    formulation, we’re dedicated to your contentment.
+                  </p>
+                  <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="service-content-rght">
+              <div class="service-content-rght-item">
+                <div class="service-content-rghtimg">
+                  <img src="./image/face_care.jpg" alt="img" />
+                </div>
+                <div class="service-content-rghttext">
+                  <h4>Face Care</h4>
+                  <p>
+                    "KUKU Cosmetics delivers high-quality face care solutions for healthy, radiant skin."
+
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+              <div class="service-content-rght-item">
+                <div class="service-content-rghtimg">
+                  <img src="./image/hair_care.jpg" alt="img" />
+                </div>
+                <div class="service-content-rghttext">
+                  <h4>Hair Care</h4>
+                  <p>
+                    "KUKU Cosmetics delivers premium hair care solutions that nourish from root to tip, giving you
+                    strong, shiny, and healthy hair."
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+              <div class="service-content-rght-item">
+                <div class="service-content-rghtimg">
+                  <img src="./image/body_care.svg" alt="img" />
+                </div>
+                <div class="service-content-rghttext">
+                  <h4>Body Care</h4>
+                  <p>
+                    "KUKU Cosmetics offers gentle yet effective body care that hydrates, smooths, and enhances your
+                    skin’s natural glow."
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+              <div class="service-content-rght-item">
+                <div class="service-content-rghtimg">
+                  <img src="./image/personal_care.svg" alt="img" />
+                </div>
+                <div class="service-content-rghttext">
+                  <h4>Personal Care</h4>
+                  <p>
+                    "KUKU Cosmetics ensures daily freshness and confidence with safe, effective personal care products
+                    for all-d
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <button type="submit" class="submit-btn">SEND US</button>
-      </form>
-
-    </div>
-  </div>
-</div>
-</div>
-
-</main>
-
-<footer class="footer">
-<div class="container">
-<div class="footer-inner">
-  <div class="footer-right">
-    <div class="logo-img">
-      <a href=""><img src="./image/KUKU COSMETICS (1).svg" alt="logo"></a>
-    </div>
-    <div class="footer-content">
-      <p>328 sahitya industrial park, kujad road bakrol - bujarang - dascroi, Ahmedabad-382430, Gujarat,
-        India.</p>
-    </div>
-    <div class="social-icon">
-      <!-- <div class="social-icon-img">
-        <a href=""><img src="./image/facebook-f-brands-solid-full.svg" alt="img"></a>
-      </div>
-      <div class="social-icon-img">
-        <a href=""><img src="./image/instagram-brands-solid-full.svg" alt="img"></a>
-      </div>
-      <div class="social-icon-img">
-          <a href=""><img src="./image/twitter-brands-solid-full.svg" alt="img"></a>
-      </div> -->
-      <div class="social-icon-img">
-        <a href="tel:886-691-5181"><img src="./image/whatsapp-brands-solid-full.svg" alt="img"></a>
       </div>
     </div>
-  </div>
-  <div class="footer-left">
-    <div class="footer-left-menu">
-      <h6>Category</h6>
-      <ul>
-        <li><a href="#">Face care</a></li>
-        <li><a href="#">Hair Care</a></li>
-        <li><a href="#">Body Care</a></li>
-        <li><a href="#">Personal Care</a></li>
-        <li><a href="#">Men's Grooming </a></li>
-      </ul>
-    </div>
-    <div class="footer-left-menu">
-      <h6>Services</h6>
-      <ul>
-        <li><a href="#">Private Label</a></li>
-        <li><a href="#">Manufacturing</a></li>
-      </ul>
-    </div>
-    <div class="footer-left-menu">
-      <h6>Information</h6>
-      <div class="location">
-        <div class="location-img">
-          <img src="./image/fi_542689.png" alt="mail">
+    <!-- process  -->
+    <div class="process-sec">
+      <div class="container">
+        <div class="process-inner">
+          <div class="process-title">
+            <h2>Oem Process</h2>
+            <h6>Efficient, Optimized and Streamlined OEM Process</h6>
+            <p>At HCP Wellness, we extend our comprehensive services to a diverse range of clients, catering to B2B
+              businesses, D2C / DTC brands, and online sellers including Amazon and Flipkart. Whether you’re a
+              large-scale retailer or an individual entrepreneur, our cosmetic manufacturing solutions are tailored to
+              meet your specific needs, ensuring seamless production and delivery of high-quality cosmetic products to
+              your customers. </p>
+          </div>
+          <div class="process-content">
+            <div class="process-content-inner">
+              <div class="process-content-img">
+                <img src="./image/inquiry-cosmetic-manufacturer.svg" alt="img">
+              </div>
+              <div class="process-content-text">
+                <p>Inquiry</p>
+              </div>
+            </div>
+            <div class="process-content-inner">
+              <div class="process-content-img">
+                <img src="./image/sample-confirmed-skin-care-manufacturer.svg" alt="img">
+              </div>
+              <div class="process-content-text">
+                <p>Sample Confirmed</p>
+              </div>
+            </div>
+            <div class="process-content-inner">
+              <div class="process-content-img">
+                <img src="./image/pi-signed-cosmetic-product-manufacturer.svg" alt="img">
+              </div>
+              <div class="process-content-text">
+                <p>PI Signed</p>
+              </div>
+            </div>
+            <div class="process-content-inner">
+              <div class="process-content-img">
+                <img src="./image/deposit-herbal-cosmetic-manufacturer.svg" alt="img">
+              </div>
+              <div class="process-content-text">
+                <p>40% Deposit
+                </p>
+              </div>
+            </div>
+
+            <div class="process-content-inner">
+              <div class="process-content-img">
+                <img src="./image/design-ayurvedic-cosmetic-manufacturer.svg" alt="img">
+              </div>
+              <div class="process-content-text">
+                <p>Design
+                </p>
+              </div>
+            </div>
+            <div class="process-content-inner">
+              <div class="process-content-img">
+                <img src="./image/sample-making-hair-care-product-manufacturer.svg" alt="img">
+              </div>
+              <div class="process-content-text">
+                <p>manufacturing
+                </p>
+              </div>
+            </div>
+            <div class="process-content-inner">
+              <div class="process-content-img">
+                <img src="./image/inspection-private-label-cosmetic-manufacturer.svg" alt="img">
+              </div>
+              <div class="process-content-text">
+                <p>Inspection
+                </p>
+              </div>
+            </div>
+            <div class="process-content-inner">
+              <div class="process-content-img">
+                <img src="./image/balance-third-party-cosmetic-manufacturer.svg" alt="img">
+              </div>
+              <div class="process-content-text">
+                <p>60% Balance
+
+                </p>
+              </div>
+            </div>
+            <div class="process-content-inner">
+              <div class="process-content-img">
+                <img src="./image/shipment-contract-manufacturing.svg" alt="img">
+              </div>
+              <div class="process-content-text">
+                <p>Shipment
+
+                </p>
+              </div>
+            </div>
+            <div class="process-content-inner">
+              <div class="process-content-img">
+                <img src="./image/after-sale-cosmetic-contract-manufacturer.svg" alt="img">
+              </div>
+              <div class="process-content-text">
+                <p>After Sale
+
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="mailto:kukucosmetics25@gamil.com">kukucosmetics25@gamil.com</a>
-      </div>
-      <div class="location phone">
-        <div class="location-img">
-          <img src="./image/fi_152851.png" alt="phone">
-        </div>
-        <a href="tel:886-691-5181">+91 8866915181</a>
-      </div>
-      <div class="location email">
-        <div class="location-img">
-          <img src="./image/Group (35).png" alt="location">
-        </div>
-        <p>328 sahitya industrial park, kujad road bakrol - bujarang - dascroi</p>
       </div>
     </div>
-  </div>
-</div>
- 
-</div>
+    <!-- content & img  -->
+    <div class="text-title-sec">
+      <div class="container">
+        <div class="text-title-inner">
+          <div class="text-title">
+            <h2>
+              Bring Unique Products And Formulations To The Market
+            </h2>
+          </div>
+          <div class="text-title-wrap">
+            <div class="text-left-content-wrap">
+              <div class="text-left-content">
+                <div class="text-left-content-inner">
+                  <h5>Precision Manufacturing
+                  </h5>
+                  <p>Our cutting-edge manufacturing systems guarantee the utmost product quality</p>
+                </div>
+                <div class="text-left-content-img">
+                  <img src="./image/precision-manufacturing-icon-cosmetic-manufacturer.svg" alt="img">
+                </div>
+              </div>
+              <div class="text-left-content">
+                <div class="text-left-content-inner">
+                  <h5>Premium Global Sourcing
+                  </h5>
+                  <p>Curated selection of over 3000 premium natural ingredients sourced globally
+                  </p>
+                </div>
+                <div class="text-left-content-img">
+                  <img src="./image/premium-global-sourcing-icon-herbal-cosmetic-manufacturer-1.svg" alt="img">
+                </div>
+              </div>
+              <div class="text-left-content">
+                <div class="text-left-content-inner">
+                  <h5>Prompt Fulfillment
+                  </h5>
+                  <p>Timely delivery to meet your launch deadlines and prevent stock shortages
+                  </p>
+                </div>
+                <div class="text-left-content-img">
+                  <img src="./image/prompt-fulfillment-icon-oral-care-toothpaste-manufacturer.svg" alt="img">
+                </div>
+              </div>
+            </div>
+            <div class="text-title-img">
+              <img src="./image/01.svg" alt="img">
+            </div>
+            <div class="text-right-content-wrap">
+              <div class="text-left-content">
+                <div class="text-left-content-img">
+                  <img src="./image/stability-assured-icon-health-and-wellness-product-manufacturer.svg" alt="img">
+                </div>
+                <div class="text-left-content-inner">
+                  <h5>Stability Assured
+                  </h5>
+                  <p>Formulations rigorously tested for stability, ensuring optimal performance in any environment
+                  </p>
+                </div>
+              </div>
+              <div class="text-left-content">
+                <div class="text-left-content-img">
+                  <img src="./image/Innovate-icon-skincare-product-manufacturer.svg" alt="img">
+                </div>
+                <div class="text-left-content-inner">
+                  <h5>Infuse To Innovate
+                  </h5>
+                  <p>Utilize innovative raw materials to set your products apart in the market
+                  </p>
+                </div>
+              </div>
+              <div class="text-left-content">
+                <div class="text-left-content-img">
+                  <img src="./image/regulatory-compliance-cosmetic-manufacturing.svg" alt="img">
+                </div>
+                <div class="text-left-content-inner">
+                  <h5>Regulatory Compliance
+                  </h5>
+                  <p>Facilities compliant with GMP, ISO, and FDA standards for top-tier end-products
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- form submit  -->
+    <div class="form-sec">
+      <div class="container">
+        <div class="form-inner">
+          <div class="form-left">
+            <div class="form-title">
+              <h4>let’s get in touch</h4>
+              <p>Reach out to us today to elevate your brand with our expert cosmetic manufacturing services.</p>
+            </div>
+            <div class="form-addres">
+              <div class="form-contry">
+                <img src="./image/india-map.png" alt="img">
+                <p>India</p>
+              </div>
+              <ul class="form-call">
+                <li>
+                  <div class="location-img call-img">
+                    <img src="./image/fi_152851.png" alt="phone">
+                  </div>
+                  <a href="tel:886-691-5181">+91 8866915181</a>
+                </li>
+                <li>
+                  <div class="location-img call-img">
+                    <img src="./image/fi_542689.png" alt="mail">
+                  </div>
+                  <a href="mailto:kukucosmetics25@gamil.com">kukucosmetics25@gamil.com</a>
+                </li>
+                <li>
+                  <div class="call-img">
+                    <img src="./image/fi_1483285.svg" alt="img">
+                  </div>
+                  <div class="call-num">
+                    <a href="" target="_blank">328 sahitya industrial park, kujad road bakrol - bujarang - dascroi ,
+                      Ahmedabad.</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-</footer>
+          <div class="form-right">
+            <h2 class="form-title">Hey! There</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Enter Name*" required>
+              </div>
 
-<script src="./js/jquery.min.js"></script>
-<script type="text/javascript" src="./js/slick.min.js"></script>
-<script>
-$(document).ready(function () {
-$(".banner-nner").slick({
-  dots: true,
-  arrows: false,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-});
-});
-</script>
-<!-- faq  -->
-<script>
-$(document).ready(function () {
-        $(".acc-set > a").on("mouseenter", function () {
-          if (!$(this).hasClass("active")) {
-            // Reset all
-            $(".acc-set > a").removeClass("active");
-            $(".acc-set > a i").removeClass("fa-minus").addClass("fa-plus");
-            $(".acc content").slideUp(200);
-      
-            // Activate hovered one
-            $(this).addClass("active");
-            $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
-            $(this).siblings(".acc content").slideDown(200);
-          }
-        });
-      
-        $(".acc set").on("mouseleave", function () {
-          $(this).find("a").removeClass("active");
-          $(this).find("i").removeClass("fa-minus").addClass("fa-plus");
-          $(this).find(".acc content").slideUp(200);
-        });
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="email" id="email" name="email" placeholder="Enter Email*" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number*" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="company" name="company" placeholder="Enter Company">
+                </div>
+                <div class="form-group">
+                  <input type="text" id="city" name="city" placeholder="Enter City*" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <textarea id="requirement" name="requirement" placeholder="Brief about your requirement"></textarea>
+              </div>
+
+              <div class="recaptcha-container">
+                <div class="recaptcha-mock" onclick="toggleRecaptcha()">
+                  <div class="recaptcha-checkbox" id="recaptcha-check"></div>
+                  <span>I'm not a robot</span>
+                  <div class="recaptcha-logo">
+                    <div>reCAPTCHA</div>
+                    <div style="font-size: 8px;">Privacy - Terms</div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="submit-btn">SEND US</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-right">
+          <div class="logo-img">
+            <a href=""><img src="./image/KUKU COSMETICS (1).svg" alt="logo"></a>
+          </div>
+          <div class="footer-content">
+            <p>328 sahitya industrial park, kujad road bakrol - bujarang - dascroi, Ahmedabad-382430, Gujarat,
+              India.</p>
+          </div>
+          <div class="social-icon">
+            <!-- <div class="social-icon-img">
+      <a href=""><img src="./image/facebook-f-brands-solid-full.svg" alt="img"></a>
+    </div>
+    <div class="social-icon-img">
+      <a href=""><img src="./image/instagram-brands-solid-full.svg" alt="img"></a>
+    </div>
+    <div class="social-icon-img">
+        <a href=""><img src="./image/twitter-brands-solid-full.svg" alt="img"></a>
+    </div> -->
+            <div class="social-icon-img">
+              <a href="tel:886-691-5181"><img src="./image/whatsapp-brands-solid-full.svg" alt="img"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-left">
+          <div class="footer-left-menu">
+            <h6>Category</h6>
+            <ul>
+              <li><a href="#">Face care</a></li>
+              <li><a href="#">Hair Care</a></li>
+              <li><a href="#">Body Care</a></li>
+              <li><a href="#">Personal Care</a></li>
+              <li><a href="#">Men's Grooming </a></li>
+            </ul>
+          </div>
+          <div class="footer-left-menu">
+            <h6>Services</h6>
+            <ul>
+              <li><a href="#">Private Label</a></li>
+              <li><a href="#">Manufacturing</a></li>
+            </ul>
+          </div>
+          <div class="footer-left-menu">
+            <h6>Information</h6>
+            <div class="location">
+              <div class="location-img">
+                <img src="./image/fi_542689.png" alt="mail">
+              </div>
+              <a href="mailto:kukucosmetics25@gamil.com">kukucosmetics25@gamil.com</a>
+            </div>
+            <div class="location phone">
+              <div class="location-img">
+                <img src="./image/fi_152851.png" alt="phone">
+              </div>
+              <a href="tel:886-691-5181">+91 8866915181</a>
+            </div>
+            <div class="location email">
+              <div class="location-img">
+                <img src="./image/Group (35).png" alt="location">
+              </div>
+              <p>328 sahitya industrial park, kujad road bakrol - bujarang - dascroi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".banner-nner").slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        adaptiveHeight: true,
       });
-  
-</script>
+    });
+  </script>
+  <!-- faq  -->
+  <script>
+    $(document).ready(function () {
+      $(".acc-set > a").on("mouseenter", function () {
+        if (!$(this).hasClass("active")) {
+          // Reset all
+          $(".acc-set > a").removeClass("active");
+          $(".acc-set > a i").removeClass("fa-minus").addClass("fa-plus");
+          $(".acc content").slideUp(200);
 
-
-<script>
-// menu 
-function toggleMenu() {
-        const menu = document.getElementById('main-menu');
-        const toggle = document.getElementById('menu-toggle');
-        
-        menu.classList.toggle('active');
-        
-        // Change hamburger to X and vice versa
-        if (menu.classList.contains('active')) {
-            toggle.innerHTML = '✕';
-        } else {
-            toggle.innerHTML = '☰';
+          // Activate hovered one
+          $(this).addClass("active");
+          $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+          $(this).siblings(".acc content").slideDown(200);
         }
+      });
+
+      $(".acc set").on("mouseleave", function () {
+        $(this).find("a").removeClass("active");
+        $(this).find("i").removeClass("fa-minus").addClass("fa-plus");
+        $(this).find(".acc content").slideUp(200);
+      });
+    });
+
+  </script>
+
+
+  <script>
+    // menu 
+    function toggleMenu() {
+      const menu = document.getElementById('main-menu');
+      const toggle = document.getElementById('menu-toggle');
+
+      menu.classList.toggle('active');
+
+      // Change hamburger to X and vice versa
+      if (menu.classList.contains('active')) {
+        toggle.innerHTML = '✕';
+      } else {
+        toggle.innerHTML = '☰';
+      }
     }
 
     function toggleSubmenu(event) {
-        // Only for mobile view
-        if (window.innerWidth <= 768) {
-            event.preventDefault();
-            event.stopPropagation();
-            
-            const clickedItem = event.currentTarget;
-            const submenu = clickedItem.querySelector('ul');
-            
-            if (submenu) {
-                clickedItem.classList.toggle('active');
-            }
+      // Only for mobile view
+      if (window.innerWidth <= 768) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const clickedItem = event.currentTarget;
+        const submenu = clickedItem.querySelector('ul');
+
+        if (submenu) {
+          clickedItem.classList.toggle('active');
         }
+      }
     }
 
     // Close mobile menu when clicking outside
-    document.addEventListener('click', function(event) {
-        const menu = document.getElementById('main-menu');
-        const toggle = document.getElementById('menu-toggle');
-        const nav = document.querySelector('nav');
-        
-        if (!nav.contains(event.target) && menu.classList.contains('active')) {
-            menu.classList.remove('active');
-            toggle.innerHTML = '☰';
-        }
+    document.addEventListener('click', function (event) {
+      const menu = document.getElementById('main-menu');
+      const toggle = document.getElementById('menu-toggle');
+      const nav = document.querySelector('nav');
+
+      if (!nav.contains(event.target) && menu.classList.contains('active')) {
+        menu.classList.remove('active');
+        toggle.innerHTML = '☰';
+      }
     });
 
     // Handle window resize
-    window.addEventListener('resize', function() {
-        const menu = document.getElementById('main-menu');
-        const toggle = document.getElementById('menu-toggle');
-        
-        if (window.innerWidth > 768) {
-            menu.classList.remove('active');
-            toggle.innerHTML = '☰';
-            
-            // Remove active class from all mobile submenus
-            const activeItems = document.querySelectorAll('#main-menu li.active');
-            activeItems.forEach(item => item.classList.remove('active'));
-        }
+    window.addEventListener('resize', function () {
+      const menu = document.getElementById('main-menu');
+      const toggle = document.getElementById('menu-toggle');
+
+      if (window.innerWidth > 768) {
+        menu.classList.remove('active');
+        toggle.innerHTML = '☰';
+
+        // Remove active class from all mobile submenus
+        const activeItems = document.querySelectorAll('#main-menu li.active');
+        activeItems.forEach(item => item.classList.remove('active'));
+      }
     });
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-// form
-let recaptchaChecked = false;
-
-function toggleRecaptcha() {
-const checkbox = document.getElementById('recaptcha-check');
-recaptchaChecked = !recaptchaChecked;
-
-if (recaptchaChecked) {
-  checkbox.classList.add('checked');
-} else {
-  checkbox.classList.remove('checked');
-}
-}
-
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-e.preventDefault();
-
-if (!recaptchaChecked) {
-  alert('Please verify that you are not a robot.');
-  return;
-}
-
-// Get form data
-const formData = {
-  name: document.getElementById('name').value,
-  email: document.getElementById('email').value,
-  mobile: document.getElementById('mobile').value,
-  company: document.getElementById('company').value,
-  city: document.getElementById('city').value,
-  requirement: document.getElementById('requirement').value
-};
-
-// Simulate form submission
-alert('Thank you for your message! We will get back to you soon.');
-console.log('Form Data:', formData);
-
-// Reset form
-this.reset();
-recaptchaChecked = false;
-document.getElementById('recaptcha-check').classList.remove('checked');
-});
-
-// Add scroll effect to header
-window.addEventListener('scroll', function () {
-const header = document.querySelector('.header-container');
-if (window.scrollY > 100) {
-  header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.15)';
-} else {
-  header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
-}
-});
-
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', function (e) {
-  const href = this.getAttribute('href');
-  if (href !== '#') {
-    e.preventDefault();
-    const target = document.querySelector(href);
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       });
+    });
+    // form
+    let recaptchaChecked = false;
+
+    function toggleRecaptcha() {
+      const checkbox = document.getElementById('recaptcha-check');
+      recaptchaChecked = !recaptchaChecked;
+
+      if (recaptchaChecked) {
+        checkbox.classList.add('checked');
+      } else {
+        checkbox.classList.remove('checked');
+      }
     }
 
-    // Close mobile menu if open
-    if (isMenuOpen) {
-      toggleMobileMenu();
-    }
-  }
-});
-});
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
 
-// Prevent menu from closing when clicking inside dropdown
-document.querySelectorAll('.dropdown-menu').forEach(menu => {
-menu.addEventListener('click', function (e) {
-  e.stopPropagation();
-});
-});
+      if (!recaptchaChecked) {
+        alert('Please verify that you are not a robot.');
+        return;
+      }
 
-// Initialize page
-document.addEventListener('DOMContentLoaded', function () {
-// Remove loading class if present
-const navMenu = document.getElementById('navMenu');
-navMenu.classList.remove('loading');
+      // Get form data
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        mobile: document.getElementById('mobile').value,
+        company: document.getElementById('company').value,
+        city: document.getElementById('city').value,
+        requirement: document.getElementById('requirement').value
+      };
 
-// Set initial state
-isMenuOpen = false;
-});
-</script>
+      // Simulate form submission
+      alert('Thank you for your message! We will get back to you soon.');
+      console.log('Form Data:', formData);
+
+      // Reset form
+      this.reset();
+      recaptchaChecked = false;
+      document.getElementById('recaptcha-check').classList.remove('checked');
+    });
+
+    // Add scroll effect to header
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('.header-container');
+      if (window.scrollY > 100) {
+        header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.15)';
+      } else {
+        header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
+      }
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+
+          // Close mobile menu if open
+          if (isMenuOpen) {
+            toggleMobileMenu();
+          }
+        }
+      });
+    });
+
+    // Prevent menu from closing when clicking inside dropdown
+    document.querySelectorAll('.dropdown-menu').forEach(menu => {
+      menu.addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
+    });
+
+    // Initialize page
+    document.addEventListener('DOMContentLoaded', function () {
+      // Remove loading class if present
+      const navMenu = document.getElementById('navMenu');
+      navMenu.classList.remove('loading');
+
+      // Set initial state
+      isMenuOpen = false;
+    });
+  </script>
 </body>
 
 </html>

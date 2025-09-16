@@ -334,6 +334,8 @@ nav {
 #main-menu ul ul {
   left: 100%;
   top: 0;
+  min-width: 235px;
+
 }
 
 /* Mobile Menu Toggle */
@@ -360,6 +362,15 @@ nav {
 }
 
 /* banner  */
+.banner-detail{
+  padding: 50px 20px; max-width: 900px; margin: 0 auto; text-align: center;
+}
+.banner-detail p{
+  margin-bottom: 20px;
+}
+.banner-detail p:last-child{
+  margin-bottom: 0;
+}
 .banner-sec{
 padding: 70px 0;
 }
@@ -1328,6 +1339,35 @@ width: 100%;
 }
 .two-column-content h2{
 margin-bottom: 20px;
+}
+.two-column-content ul{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.48;
+  color: var(--secondry_color);
+  font-family: var(--poppins);
+  margin-bottom: 20px;
+}
+.two-column-content  li{
+  list-style-type: circle;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.48;
+  color: var(--secondry_color);
+  font-family: var(--poppins);
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+.two-column-content  p{
+  margin-top: 20px;
+}
+.two-column-content ul h6{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.48;
+  color: var(--secondry_color);
+  font-family: var(--poppins);
+  margin-bottom: 20px;
 }
 .privet-lab{
 padding-top: 100px;
