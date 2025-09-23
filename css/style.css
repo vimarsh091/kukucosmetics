@@ -75,6 +75,9 @@ color: var(--secondry_color);
 font-family: var(--poppins);
 
 }
+ul h5{
+  margin-bottom: 20px;
+}
 
 p {
 font-size: 16px;
