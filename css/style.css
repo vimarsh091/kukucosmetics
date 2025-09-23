@@ -365,9 +365,13 @@ nav {
 }
 
 /* banner  */
-.banner-detail{
-  padding: 50px 20px; max-width: 900px; margin: 0 auto; text-align: center;
+.banner-detail {
+  padding: 100px 0 50px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
 .banner-detail p{
   margin-bottom: 20px;
 }
