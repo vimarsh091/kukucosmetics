@@ -1614,3 +1614,15 @@ display: flex;
 .two-column-content p{
   margin-bottom: 20px;
 }
+
+.quality-content {
+  padding: 80px 0;
+}
+
+.quality-content h5 , .quality-content p{
+  margin-bottom:20px;
+}
+.quality-content ul li{
+  list-style-type: disc;
+  margin-left: 20px;
+}
