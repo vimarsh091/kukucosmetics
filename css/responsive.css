@@ -488,7 +488,7 @@ width: 100%;
 
 
  /* Responsive Design */
- /* @media (max-width: 768px) {
+ @media (max-width: 768px) {
   .header-content {
       flex-direction: column;
       align-items: flex-start;
@@ -543,10 +543,10 @@ width: 100%;
   #main-menu > li > a {
       padding: 15px 20px;
       border-bottom: none;
-  } */
+  } 
 
   /* Mobile dropdown styles */
-  /* #main-menu ul {
+   #main-menu ul {
       position: static;
       opacity: 1;
       visibility: visible;
@@ -588,7 +588,7 @@ width: 100%;
   width: calc(100% - 0px);
   margin-top: 50px;
 }
- } */
+ } 
 @media (max-width: 510px) {
   .container {
       padding: 0 15px;

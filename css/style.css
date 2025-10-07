@@ -1526,7 +1526,8 @@ cursor: pointer;
 text-align: center;
 font-size: 35px;
 position: absolute;
-top: -60px;
+top: -100px;
+    right: 80px;
 }
 
 nav ul {
