@@ -7,7 +7,7 @@
 
 
 @media (max-width: 1204px) {
-  .header-content {
+  /* .header-content {
     grid-template-columns: auto 1fr;
     gap: 20px;
   }
@@ -26,7 +26,7 @@
 
   .text-title-img {
     height: 360px;
-  }
+  } */
 
   .text-left-content {
     column-gap: 10px;
@@ -69,10 +69,10 @@ width: 46%;
 }
 
 @media (max-width: 991px) {
-  .nav-link {
+  /* .nav-link {
     padding: 20px 15px;
     font-size: 12px;
-  }
+  } */
 
   h1 {
     font-size: 35px;
@@ -178,7 +178,7 @@ nav ul{
     font-size: 14px;
   }
 
-  .header-content {
+  /* .header-content {
     flex-direction: column;
     text-align: center;
   }
@@ -231,7 +231,7 @@ nav ul{
 
   .dropdown-menu li {
     padding: 6px 12px;
-  }
+  } */
 
   .product-img-title h2 {
     font-size: 32px;
@@ -488,7 +488,7 @@ width: 100%;
 
 
  /* Responsive Design */
- @media (max-width: 768px) {
+ /* @media (max-width: 768px) {
   .header-content {
       flex-direction: column;
       align-items: flex-start;
@@ -543,10 +543,10 @@ width: 100%;
   #main-menu > li > a {
       padding: 15px 20px;
       border-bottom: none;
-  }
+  } */
 
   /* Mobile dropdown styles */
-  #main-menu ul {
+  /* #main-menu ul {
       position: static;
       opacity: 1;
       visibility: visible;
@@ -577,7 +577,7 @@ width: 100%;
 
   .header-spacing {
       padding-top: 90px;
-  }
+  } 
   .company-info , .action-buttons{
     display: none;
   }
@@ -588,7 +588,7 @@ width: 100%;
   width: calc(100% - 0px);
   margin-top: 50px;
 }
- }
+ } */
 @media (max-width: 510px) {
   .container {
       padding: 0 15px;
@@ -629,4 +629,87 @@ width: 100%;
   width: 100%;
   margin-top: 30px;
 }
+}
+
+
+
+
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: relative;
+    z-index: 1000;
+  }
+
+  #main-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    background: #fff;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  #main-menu.active {
+    max-height: 90vh; /* allow scrollable height */
+    overflow-y: auto; /* scroll works properly */
+  }
+
+  #main-menu > li {
+    border-bottom: 1px solid #eee;
+  }
+
+  #main-menu > li > a {
+    padding: 15px 20px;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Submenu */
+  #main-menu ul {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: #f9f9f9;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  #main-menu li.active > ul {
+    max-height: 1000px; /* enough for long menus like Baby Care */
+  }
+
+  #main-menu ul ul {
+    background: #f0f0f0;
+  }
+
+  #main-menu ul a {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+
+  #main-menu ul ul a {
+    padding-left: 45px;
+  }
+
+  /* Hide extra header items on mobile */
+  .company-info,
+  .action-buttons {
+    display: none;
+  }
 }
