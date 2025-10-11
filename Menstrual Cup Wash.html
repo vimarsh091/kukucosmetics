@@ -303,63 +303,66 @@
   <script src="./js/jquery.min.js"></script>
   <script type="text/javascript" src="./js/slick.min.js"></script>
  
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById('main-menu');
-    const toggle = document.getElementById('menu-toggle');
-  
-    menu.classList.toggle('active');
-    toggle.innerHTML = menu.classList.contains('active') ? '✕' : '☰';
-  }
-  
-  function toggleSubmenu(event) {
-    if (window.innerWidth <= 768) {
-      // Check if clicked element has a submenu
-      const item = event.currentTarget;
-      const submenu = item.querySelector('ul');
-      
-      if (submenu) {
-        // Only prevent default and toggle if there's a submenu
-        event.preventDefault();
-        event.stopPropagation();
-        item.classList.toggle('active');
-      }
-      // If no submenu, allow the link to work normally
-    }
-  }
-  
-  // Close menu when clicking outside
-  document.addEventListener('click', (e) => {
-    const nav = document.querySelector('nav');
-    const menu = document.getElementById('main-menu');
-    const toggle = document.getElementById('menu-toggle');
-  
-    // Only close if clicked outside nav AND menu is active
-    if (!nav.contains(e.target) && menu.classList.contains('active')) {
-      menu.classList.remove('active');
-      toggle.innerHTML = '☰';
-      
-      // Also close all submenus
-      const activeItems = document.querySelectorAll('#main-menu li.active');
-      activeItems.forEach(item => item.classList.remove('active'));
-    }
-  });
-  
-  // Handle resize (reset)
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
+  <script>
+    function toggleMenu() {
       const menu = document.getElementById('main-menu');
       const toggle = document.getElementById('menu-toggle');
-      const activeItems = document.querySelectorAll('#main-menu li.active');
-      
-      // Reset everything on desktop
-      menu.classList.remove('active');
-      toggle.innerHTML = '☰';
-      activeItems.forEach(item => item.classList.remove('active'));
+      menu.classList.toggle('active');
+      toggle.innerHTML = menu.classList.contains('active') ? '✕' : '☰';
     }
-  });
-  
-</script>
+    
+    function toggleSubmenu(event) {
+      // Only run this on mobile
+      if (window.innerWidth <= 768) {
+        const li = event.currentTarget;
+        const submenu = li.querySelector(':scope > ul');
+    
+        // Detect if user clicked the link itself
+        const clickedLink = event.target.closest('a');
+    
+        // If submenu exists
+        if (submenu) {
+          // If user clicked on arrow or LI background (not the link)
+          if (event.target === li || event.target.parentElement === li) {
+            event.preventDefault();
+            li.classList.toggle('active');
+          }
+          // If clicked directly on <a>, open the link normally
+          else if (clickedLink && !submenu.contains(clickedLink)) {
+            window.location.href = clickedLink.href;
+          }
+        } 
+        // If no submenu → allow normal link navigation
+        else if (clickedLink) {
+          window.location.href = clickedLink.href;
+        }
+      }
+    }
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      const nav = document.querySelector('nav');
+      const menu = document.getElementById('main-menu');
+      const toggle = document.getElementById('menu-toggle');
+    
+      if (!nav.contains(e.target) && menu.classList.contains('active')) {
+        menu.classList.remove('active');
+        toggle.innerHTML = '☰';
+        document.querySelectorAll('#main-menu li.active').forEach(item => item.classList.remove('active'));
+      }
+    });
+    
+    // Reset on desktop resize
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        const menu = document.getElementById('main-menu');
+        const toggle = document.getElementById('menu-toggle');
+        menu.classList.remove('active');
+        toggle.innerHTML = '☰';
+        document.querySelectorAll('#main-menu li.active').forEach(item => item.classList.remove('active'));
+      }
+    });
+    </script>
 </body>
 
 </html>

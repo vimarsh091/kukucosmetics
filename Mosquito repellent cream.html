@@ -215,77 +215,7 @@
         </div>
       </div>
 </main>
-<footer class="footer">
-  <div class="container">
-  <div class="footer-inner">
-    <div class="footer-right">
-      <div class="logo-img">
-        <a href=""><img src="./image/KUKU COSMETICS (1).svg" alt="logo"></a>
-      </div>
-      <div class="footer-content">
-        <p>328 sahitya industrial park, kujad road bakrol - bujarang - dascroi, Ahmedabad-382430, Gujarat,
-          India.</p>
-      </div>
-      <div class="social-icon">
-        <!-- <div class="social-icon-img">
-          <a href=""><img src="./image/facebook-f-brands-solid-full.svg" alt="img"></a>
-        </div>
-        <div class="social-icon-img">
-          <a href=""><img src="./image/instagram-brands-solid-full.svg" alt="img"></a>
-        </div>
-        <div class="social-icon-img">
-            <a href=""><img src="./image/twitter-brands-solid-full.svg" alt="img"></a>
-        </div> -->
-        <div class="social-icon-img">
-          <a href="tel:886-691-5181"><img src="./image/whatsapp-brands-solid-full.svg" alt="img"></a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-left">
-      <div class="footer-left-menu">
-        <h6>Category</h6>
-        <ul>
-          <li><a href="#">Face care</a></li>
-          <li><a href="#">Hair Care</a></li>
-          <li><a href="#">Body Care</a></li>
-          <li><a href="#">Personal Care</a></li>
-          <li><a href="#">Men's Grooming </a></li>
-        </ul>
-      </div>
-      <div class="footer-left-menu">
-        <h6>Services</h6>
-        <ul>
-          <li><a href="#">Private Label</a></li>
-          <li><a href="#">Manufacturing</a></li>
-        </ul>
-      </div>
-      <div class="footer-left-menu">
-        <h6>Information</h6>
-        <div class="location">
-          <div class="location-img">
-            <img src="./image/fi_542689.png" alt="mail">
-          </div>
-          <a href="mailto:kukucosmetics25@gamil.com">kukucosmetics25@gamil.com</a>
-        </div>
-        <div class="location phone">
-          <div class="location-img">
-            <img src="./image/fi_152851.png" alt="phone">
-          </div>
-          <a href="tel:886-691-5181">+91 8866915181</a>
-        </div>
-        <div class="location email">
-          <div class="location-img">
-            <img src="./image/Group (35).png" alt="location">
-          </div>
-          <p>328 sahitya industrial park, kujad road bakrol - bujarang - dascroi</p>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-  </div>
-  </div>
-  </footer><footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer-inner">
         <div class="footer-right">
@@ -372,24 +302,35 @@
   function toggleMenu() {
     const menu = document.getElementById('main-menu');
     const toggle = document.getElementById('menu-toggle');
-  
     menu.classList.toggle('active');
     toggle.innerHTML = menu.classList.contains('active') ? '✕' : '☰';
   }
   
   function toggleSubmenu(event) {
+    // Only run this on mobile
     if (window.innerWidth <= 768) {
-      // Check if clicked element has a submenu
-      const item = event.currentTarget;
-      const submenu = item.querySelector('ul');
-      
+      const li = event.currentTarget;
+      const submenu = li.querySelector(':scope > ul');
+  
+      // Detect if user clicked the link itself
+      const clickedLink = event.target.closest('a');
+  
+      // If submenu exists
       if (submenu) {
-        // Only prevent default and toggle if there's a submenu
-        event.preventDefault();
-        event.stopPropagation();
-        item.classList.toggle('active');
+        // If user clicked on arrow or LI background (not the link)
+        if (event.target === li || event.target.parentElement === li) {
+          event.preventDefault();
+          li.classList.toggle('active');
+        }
+        // If clicked directly on <a>, open the link normally
+        else if (clickedLink && !submenu.contains(clickedLink)) {
+          window.location.href = clickedLink.href;
+        }
+      } 
+      // If no submenu → allow normal link navigation
+      else if (clickedLink) {
+        window.location.href = clickedLink.href;
       }
-      // If no submenu, allow the link to work normally
     }
   }
   
@@ -399,32 +340,24 @@
     const menu = document.getElementById('main-menu');
     const toggle = document.getElementById('menu-toggle');
   
-    // Only close if clicked outside nav AND menu is active
     if (!nav.contains(e.target) && menu.classList.contains('active')) {
       menu.classList.remove('active');
       toggle.innerHTML = '☰';
-      
-      // Also close all submenus
-      const activeItems = document.querySelectorAll('#main-menu li.active');
-      activeItems.forEach(item => item.classList.remove('active'));
+      document.querySelectorAll('#main-menu li.active').forEach(item => item.classList.remove('active'));
     }
   });
   
-  // Handle resize (reset)
+  // Reset on desktop resize
   window.addEventListener('resize', () => {
     if (window.innerWidth > 768) {
       const menu = document.getElementById('main-menu');
       const toggle = document.getElementById('menu-toggle');
-      const activeItems = document.querySelectorAll('#main-menu li.active');
-      
-      // Reset everything on desktop
       menu.classList.remove('active');
       toggle.innerHTML = '☰';
-      activeItems.forEach(item => item.classList.remove('active'));
+      document.querySelectorAll('#main-menu li.active').forEach(item => item.classList.remove('active'));
     }
   });
-  
-</script>
+  </script>
 </body>
 
 </html>
