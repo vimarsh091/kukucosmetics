@@ -272,9 +272,10 @@
             <div class="location-img">
               <img src="./image/fi_542689.png" alt="mail">
             </div>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kukucosmetics25@gmail.com&su=Inquiry%20from%20KUKU%20Cosmetics%20Website&body=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products." target="_blank">
-              kukucosmetics25@gmail.com
-            </a>
+             <a href="#" 
+              onclick="openEmail()">
+             kukucosmetics25@gmail.com
+           </a>
             
           </div>
           <div class="location phone">
@@ -299,70 +300,12 @@
 
   </div>
 
-</footer>
+  </footer>
+  <script src="./js/script.js"></script>
 <script src="./js/jquery.min.js"></script>
 <script type="text/javascript" src="./js/slick.min.js"></script>
 
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById('main-menu');
-    const toggle = document.getElementById('menu-toggle');
-    menu.classList.toggle('active');
-    toggle.innerHTML = menu.classList.contains('active') ? '✕' : '☰';
-  }
-  
-  function toggleSubmenu(event) {
-    // Only run this on mobile
-    if (window.innerWidth <= 768) {
-      const li = event.currentTarget;
-      const submenu = li.querySelector(':scope > ul');
-  
-      // Detect if user clicked the link itself
-      const clickedLink = event.target.closest('a');
-  
-      // If submenu exists
-      if (submenu) {
-        // If user clicked on arrow or LI background (not the link)
-        if (event.target === li || event.target.parentElement === li) {
-          event.preventDefault();
-          li.classList.toggle('active');
-        }
-        // If clicked directly on <a>, open the link normally
-        else if (clickedLink && !submenu.contains(clickedLink)) {
-          window.location.href = clickedLink.href;
-        }
-      } 
-      // If no submenu → allow normal link navigation
-      else if (clickedLink) {
-        window.location.href = clickedLink.href;
-      }
-    }
-  }
-  
-  // Close menu when clicking outside
-  document.addEventListener('click', (e) => {
-    const nav = document.querySelector('nav');
-    const menu = document.getElementById('main-menu');
-    const toggle = document.getElementById('menu-toggle');
-  
-    if (!nav.contains(e.target) && menu.classList.contains('active')) {
-      menu.classList.remove('active');
-      toggle.innerHTML = '☰';
-      document.querySelectorAll('#main-menu li.active').forEach(item => item.classList.remove('active'));
-    }
-  });
-  
-  // Reset on desktop resize
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-      const menu = document.getElementById('main-menu');
-      const toggle = document.getElementById('menu-toggle');
-      menu.classList.remove('active');
-      toggle.innerHTML = '☰';
-      document.querySelectorAll('#main-menu li.active').forEach(item => item.classList.remove('active'));
-    }
-  });
-  </script>
+
 
 </body>
 
