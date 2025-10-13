@@ -1679,5 +1679,8 @@ object-fit: cover;
   border-radius: 10px;
   object-fit: contain;
 }
-
+.certificte-title{
+  text-align: center;
+  padding-bottom: 40px;
+}
 
