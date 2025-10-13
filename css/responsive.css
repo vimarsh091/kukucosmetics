@@ -713,3 +713,23 @@ width: 100%;
     display: none;
   }
 }
+
+
+/* --- Responsive Fixes --- */
+@media (max-width: 992px) {
+  .certified-img img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .certified-img img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certified-img img {
+    height: 200px;
+  }
+}

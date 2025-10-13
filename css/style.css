@@ -1656,4 +1656,28 @@ object-fit: cover;
   font-size: 16px;
   margin-bottom: 30px;
 }
+/* .certified-inner{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+} */
+.certified-sec {
+  padding: 50px 0;
+}
+
+.certified-inner {
+  margin: 0 -10px;
+}
+
+.certified-img {
+  padding: 0 30px;
+}
+
+.certified-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
 
