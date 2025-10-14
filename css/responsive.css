@@ -712,6 +712,33 @@ width: 100%;
   .action-buttons {
     display: none;
   }
+  .research-dev-flex{
+    flex-wrap: wrap;
+  }
+  .quality-research-flex , .quality-research-img , .quality-assurance-img , .quality-assurance-inner{
+width: 100%;
+  }
+  .quality-assurance-img{
+    order: 2;
+  }
+  .quality-assurance-inner{
+    padding-left: 0;
+    order: 1;
+padding-bottom: 20px;
+  }
+  .quality-inner{
+    padding-bottom: 20px;
+  }
+  .research-devlopment{
+    padding: 20px 10px;
+  }
+  .quality-content{
+    padding: 50px 0;
+  }
+
+.quality-research-flex{
+padding-bottom: 20px;
+}
 }
 
 
