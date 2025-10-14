@@ -1864,9 +1864,9 @@ p strong {
 
 /* Position arrows */
 .slick-prev {
-  left: -80px;
+  left: -100px;
 }
 
 .slick-next {
-  right: -80px;
+  right: -100px;
 }
