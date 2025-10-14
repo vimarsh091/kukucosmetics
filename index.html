@@ -288,23 +288,29 @@
   </div>
 
   <!-- Demo Content -->
-  <div class="container">
-    <div class="banner-detail">
-      <h2 style="color: #1f2937; margin-bottom: 20px;">Welcome to KUKU Cosmetics
-      </h2>
-      <p>
-        <strong>KUKU Cosmetics</strong> is a dynamic Indian start-up dedicated to developing high-quality personal care
+  <section class="hero-section">
+    <div class="container hero-content">
+      <h1 class="hero-title">Welcome to <span>KUKU Cosmetics</span></h1>
+      <p class="hero-text">
+        <strong>KUKU Cosmetics</strong> is a dynamic Indian start-up dedicated to creating high-quality personal care
         solutions that inspire confidence and promote overall wellness.
       </p>
-      <p>Our diverse portfolio <strong>spans skincare, body care, oral care, and hair care,</strong> each product
-        thoughtfully formulated to nourish, protect, and enhance natural beauty.</p>
-      <p>By blending <strong>innovation with safe, effective ingredients,</strong> we ensure every creation upholds the
-        highest standards of <strong>quality, safety,</strong> and <strong>performance.</strong></p>
-      <p> At KUKU Cosmetics, we believe beauty is more than appearance—it is a reflection of confidence, self-care, and
-        holistic well-being in everyday life.</p>
-
+      <p class="hero-text">
+        Our diverse portfolio <strong>spans skincare, body care, oral care, and hair care,</strong> each product thoughtfully
+        formulated to nourish, protect, and enhance natural beauty.
+      </p>
+      <p class="hero-text">
+        By blending <strong>innovation with safe, effective ingredients,</strong> we ensure every creation upholds the
+        highest standards of <strong>quality, safety,</strong> and <strong>performance.</strong>
+      </p>
+      <p class="hero-text">
+        At <strong>KUKU Cosmetics,</strong> beauty is more than appearance—it is a reflection of confidence, self-care, 
+        and holistic well-being in everyday life.
+      </p>
+      <a href="#products" class="btn">Explore Products</a>
     </div>
-  </div>
+  </section>
+  
 
   <main>
     <!-- banner  -->
@@ -1031,7 +1037,7 @@
     $(document).ready(function () {
       $(".banner-nner").slick({
         dots: true,
-        arrows: false,
+        arrows: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
