@@ -2205,7 +2205,7 @@ p strong {
   }
 }
 
-<<<<<<< Updated upstream
+
 /* Face-serum */
 
 th, td {
@@ -2258,9 +2258,9 @@ ul li {
 ul li::marker {
   color: #b5483c;
 }
-=======
+
 /* face wash  */
->>>>>>> Stashed changes
+
 
 /* .natural-herbal-face-inner{
   display: flex;
@@ -2278,7 +2278,7 @@ ul li::marker {
   background: linear-gradient(135deg, #fdfbfb, #ebedee);
 }
 
-<<<<<<< Updated upstream
+
 /* row divider using subtle shadow instead */
 tbody tr {
   transition: all 0.3s ease;
@@ -2290,12 +2290,7 @@ tbody tr:hover {
   background: #ffeceb;
   transform: translate(0px , 0px); /* instead of scale */
   box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-=======
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
->>>>>>> Stashed changes
+
 }
 
 .natural-herbal-face-inner {
