@@ -2416,10 +2416,6 @@ align-items: flex-start;
     text-align: center;
     margin-bottom: 50px;
   }
-  
-  .natural-herbal-face-inner-left-content h5 {
-    justify-content: center;
-  }
 
   .image-box {
     width: 100%;
@@ -2427,5 +2423,11 @@ align-items: flex-start;
   
   .image-box img {
     height: 300px;
+  }
+}
+@media(max-width:420px){
+  
+  .natural-herbal-face-inner-left-content h5 {
+    font-size: 12px;
   }
 }
