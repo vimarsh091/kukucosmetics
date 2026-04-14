@@ -12,19 +12,8 @@ const menuHtml = `
                 <li onclick="toggleSubmenu(event)">
                   <a href="#">Face Care ▸</a>
                   <ul>
-                    <li onclick="toggleSubmenu(event)">
-                      <a href="Face Wash.html">Face Wash ▸</a>
-                      <ul>
-                        <li><a href="waterless face wash.html">Waterless Face Wash</a></li>
-                      </ul>
-                    </li>
+                    <li><a href="Face Wash.html">Face Wash</a></li>
                     <li><a href="Face Serum.html">Face Serum</a></li>
-                    <li onclick="toggleSubmenu(event)">
-                      <a href="#">Sunscreen Lotion ▸</a>
-                      <ul>
-                        <li><a href="#">Invisible Sunscreen SPF 50-75</a></li>
-                      </ul>
-                    </li>
                     <li><a href="Sunscreen lotion.html">Sunscreen Lotion</a></li>
                     <li><a href="Face Cream.html">Face Cream</a></li>
                     <li><a href="Face toner.html">Face Toner</a></li>
@@ -182,14 +171,14 @@ const pages = [
     file: "Face Wash.html",
     title: "Face Wash",
     eyebrow: "Face Care Collection",
-    image: "./image/face_wash.svg",
+    image: "./image/face wash 2.png",
     introTitle: "Science-backed cleansing with botanical flexibility",
     intro: "At Kuku Cosmetics, we manufacture a comprehensive range of face washes and facial cleansers developed with a balance of science, safety, and performance. Our formulations are designed for daily use, suitable for multiple skin types, and can be customized based on brand requirements.",
     highlights: ["Sulphate free options", "pH balanced", "Dermatologically tested bases", "Custom actives, fragrance, color and packaging"],
     ranges: [
       { title: "Natural & Herbal Face Wash Range", intro: "Formulated with plant-based extracts for gentle yet effective cleansing.", items: [["Natural Face Wash", "Mild daily cleanser for all skin types"], ["Herbal Face Wash", "Traditional botanical blend"], ["Ayurvedic Face Wash", "Inspired by classical Ayurvedic ingredients"], ["Neem & Basil Face Wash", "Helps control excess oil and breakouts"], ["Aloe Vera Face Wash", "Soothing and hydrating"], ["Turmeric Face Wash", "Supports clear and healthy-looking skin"]] },
       { title: "Active & Dermatological Face Wash Range", intro: "Targeted solutions for specific skin concerns using proven actives.", items: [["Salicylic Acid Face Wash", "Acne-prone and oily skin"], ["Benzoyl Peroxide Face Wash", "Advanced anti-acne care"], ["Glycolic Acid Face Wash", "Mild exfoliation and skin renewal"], ["Niacinamide Face Wash", "Supports barrier repair and oil balance"], ["Vitamin C Face Wash", "Brightening and antioxidant support"], ["Tea Tree Face Wash", "Clarifying and purifying action"]] },
-      { title: "Skin Type & Texture Formats", intro: "Balanced formulations aligned with texture preferences and skin goals.", items: [["Face Wash for Oily Skin", "Controls excess sebum"], ["Hydrating Face Wash", "Maintains moisture balance"], ["Face Wash for Sensitive Skin", "Mild and soothing"], ["Foaming Face Wash", "Light foam for deep cleansing"], ["Face Wash Cream", "Rich, creamy cleanser"], ["Waterless Face Wash", "Innovative low-water formulation"]] },
+      { title: "Skin Type & Texture Formats", intro: "Balanced formulations aligned with texture preferences and skin goals.", items: [["Face Wash for Oily Skin", "Controls excess sebum"], ["Hydrating Face Wash", "Maintains moisture balance"], ["Face Wash for Sensitive Skin", "Mild and soothing"], ["Foaming Face Wash", "Light foam for deep cleansing"], ["Face Wash Cream", "Rich, creamy cleanser"], ["Charcoal Face Wash", "Deep cleansing for buildup and excess oil"]] },
     ],
     ctaTitle: "Customization & manufacturing support",
     ctaItems: ["Active concentration customization", "Texture and fragrance selection", "Color and packaging options", "MOQ flexibility", "Regulatory and quality support"],
@@ -198,7 +187,7 @@ const pages = [
     file: "Face Serum.html",
     title: "Face Serum",
     eyebrow: "Face Care Collection",
-    image: "./image/face_syrum.svg",
+    image: "./image/face serum 1.png",
     introTitle: "Advanced, customizable serum solutions",
     intro: "At Kuku Cosmetics, we manufacture a wide range of high-performance face serums formulated with clinically proven actives and modern delivery systems. Our serums are designed for targeted skin concerns, fast absorption, and high stability for private label and contract manufacturing.",
     highlights: ["Lightweight and non-greasy", "High-purity actives", "Custom strengths available", "Dermatologically tested bases"],
@@ -214,7 +203,7 @@ const pages = [
     file: "Sunscreen lotion.html",
     title: "Sunscreen Lotion",
     eyebrow: "Sun Care Collection",
-    image: "./image/sunscreen_lotion.svg",
+    image: "./image/sunscreen multiple.png",
     introTitle: "Broad-spectrum sun protection with cosmetic elegance",
     intro: "At Kuku Cosmetics, we manufacture a complete range of broad-spectrum sunscreen products designed to provide effective UVA and UVB protection with superior skin feel. These formulations are developed for modern performance, safety, and cosmetic elegance.",
     highlights: ["Broad-spectrum UVA and UVB protection", "Photostable and skin-friendly filters", "Non-greasy lightweight options", "White-cast-free formulations available"],
@@ -229,7 +218,7 @@ const pages = [
     file: "Face Cream.html",
     title: "Face Cream",
     eyebrow: "Face Care Collection",
-    image: "./image/face_cream.svg",
+    image: "./image/face cream 1.png",
     introTitle: "Advanced daily care and targeted treatment creams",
     intro: "At Kuku Cosmetics, we manufacture a complete range of face creams and gels formulated to deliver hydration, nourishment, and visible skin improvement. The bases are designed for excellent spreadability, fast absorption, and long-term skin comfort.",
     highlights: ["Lightweight to rich textures", "Dermatologically tested bases", "Non-greasy skin-friendly options", "Custom actives and strengths"],
@@ -245,7 +234,7 @@ const pages = [
     file: "Face toner.html",
     title: "Face Toner",
     eyebrow: "Face Care Collection",
-    image: "./image/face_toner.svg",
+    image: "./image/face toner 1.png",
     introTitle: "Balanced hydration, gentle exfoliation and skin comfort",
     intro: "At Kuku Cosmetics, we manufacture a versatile range of alcohol-free face toners formulated to hydrate, soothe, and rebalance the skin after cleansing. Our toner bases are developed to suit daily use, including sensitive skin.",
     highlights: ["Alcohol-free and skin-friendly", "pH-balancing formulations", "Suitable for sensitive skin", "Lightweight and fast absorbing"],
@@ -261,7 +250,7 @@ const pages = [
     file: "Face gel.html",
     title: "Face Gel",
     eyebrow: "Face Care Collection",
-    image: "./image/face_gel.svg",
+    image: "./image/face gel 1.png",
     introTitle: "Lightweight hydration with targeted skin care benefits",
     intro: "At Kuku Cosmetics, we manufacture a range of non-sticky, fast-absorbing face gels designed to deliver instant hydration, soothing care, and targeted skin benefits. These gel formulations are especially suited to oily and acne-prone skin.",
     highlights: ["Oil-free and non-greasy", "Fast-absorbing gel bases", "Suitable for daily use", "Skin-friendly lightweight feel"],
@@ -277,7 +266,7 @@ const pages = [
     file: "Under eye gel.html",
     title: "Under Eye Gel",
     eyebrow: "Eye Care Collection",
-    image: "./image/under_eye_gel.svg",
+    image: "./image/under eye gel.png",
     introTitle: "Targeted care for bright, refreshed eyes",
     intro: "At Kuku Cosmetics, we manufacture advanced under eye gel formulations designed to address dark circles, puffiness, fine lines, and dehydration. Our lightweight gel bases are non-greasy, fast-absorbing, and suitable for daily use.",
     highlights: ["Lightweight and non-sticky", "Suitable for sensitive under-eye area", "Dermatologically tested bases", "Cooling fast-absorption feel"],
@@ -293,7 +282,7 @@ const pages = [
     file: "Face peel.html",
     title: "Face Peel",
     eyebrow: "Exfoliation Collection",
-    image: "./image/face_peel.svg",
+    image: "./image/face peel.png",
     introTitle: "Advanced exfoliation for clear, renewed skin",
     intro: "At Kuku Cosmetics, we manufacture a range of professional-grade face peel formulations designed to exfoliate dead skin cells, improve skin texture, and enhance overall radiance. Our peel systems use controlled active concentrations for effective yet skin-friendly performance.",
     highlights: ["Controlled stable active systems", "Dermatologically tested bases", "pH-balanced peel formulations", "Suitable for home-care and professional use"],
@@ -309,7 +298,7 @@ const pages = [
     file: "Hair Serum.html",
     title: "Hair Serum",
     eyebrow: "Hair Care Collection",
-    image: "./image/Hair_serum.svg",
+    image: "./image/hair serum.png",
     introTitle: "Lightweight repair, shine and frizz control",
     intro: "At Kuku Cosmetics, we manufacture a premium range of hair serums formulated to smooth frizz, enhance shine, and protect hair from daily damage. These serum formulations are lightweight, non-sticky, and suitable for all hair types.",
     highlights: ["Non-sticky and fast-absorbing", "Enhances shine and smoothness", "Suitable for all hair types", "Custom actives and variants available"],
@@ -325,7 +314,7 @@ const pages = [
     file: "Hair oil.html",
     title: "Hair Oil",
     eyebrow: "Hair Care Collection",
-    image: "./image/Hair_oil.svg",
+    image: "./image/hair oil.png",
     introTitle: "Nourishment, strength and scalp care",
     intro: "At Kuku Cosmetics, we manufacture a wide range of hair oils formulated to nourish the scalp, strengthen hair roots, and improve overall hair health. These blends combine traditional botanical oils with modern actives for daily use and treatment care.",
     highlights: ["Lightweight to rich oil blends", "Scalp-nourishing and hair-strengthening", "Suitable for all hair types", "Custom oils and actives available"],
@@ -341,7 +330,7 @@ const pages = [
     file: "Shampoo.html",
     title: "Shampoo",
     eyebrow: "Hair Care Collection",
-    image: "./image/shampoo.svg",
+    image: "./image/hair shampoo 2.png",
     introTitle: "Targeted, gentle and performance-driven shampoo solutions",
     intro: "At Kuku Cosmetics, we manufacture a wide range of hair shampoos developed to address scalp health, hair strength, hydration, repair, and protection. Our formulations are designed with mild surfactant systems, skin-friendly pH, and customizable actives.",
     highlights: ["Sulfate-free and mild cleanser options", "Dermatologically tested bases", "Adult, baby and pet care ranges", "Herbal, ayurvedic and active variants"],
@@ -357,7 +346,7 @@ const pages = [
     file: "Conditioner.html",
     title: "Conditioner",
     eyebrow: "Hair Care Collection",
-    image: "./image/conditioer.svg",
+    image: "./image/Hair conditioner 1.png",
     introTitle: "Nourishment, repair and manageability solutions",
     intro: "At Kuku Cosmetics, we manufacture a complete range of hair conditioners formulated to smooth, detangle, strengthen, and protect hair. Our conditioner bases are developed with mild conditioning systems suitable for daily use and private label manufacturing.",
     highlights: ["Daily-use conditioning systems", "Repair and strengthening variants", "Herbal and baby care options", "Private label and contract manufacturing ready"],
@@ -373,7 +362,7 @@ const pages = [
     file: "Body Wash.html",
     title: "Body Wash",
     eyebrow: "Body Care Collection",
-    image: "./image/body_wash.svg",
+    image: "./image/body wash2.png",
     introTitle: "Gentle cleansing and skin nourishment",
     intro: "At Kuku Cosmetics, we manufacture a wide range of body washes and shower gels formulated to cleanse, hydrate, and refresh the skin without stripping natural moisture. These formulations use mild surfactant systems and skin-conditioning ingredients for daily use.",
     highlights: ["Sulfate-free options available", "pH-balanced and skin-friendly", "Non-drying formulations", "Custom fragrance and actives"],
@@ -389,7 +378,7 @@ const pages = [
     file: "Lotion.html",
     title: "Body Lotion",
     eyebrow: "Body Care Collection",
-    image: "./image/lotion.svg",
+    image: "./image/body lotion 3.png",
     introTitle: "Daily hydration, nourishment and skin comfort",
     intro: "At Kuku Cosmetics, we manufacture a wide range of body lotions formulated to hydrate, soften, and protect the skin. Our lotion formulations are designed with lightweight to rich textures for fast absorption and long-lasting moisture.",
     highlights: ["Lightweight and non-greasy options", "Long-lasting hydration", "Suitable for all skin types", "Custom actives and fragrance options"],

@@ -3,34 +3,41 @@
   function toggleMenu() {
     const menu = document.getElementById('main-menu');
     const toggle = document.getElementById('menu-toggle');
+
+    if (!menu || !toggle) return;
+
     menu.classList.toggle('active');
     toggle.innerHTML = menu.classList.contains('active') ? '✕' : '☰';
   }
   
   function toggleSubmenu(event) {
-    // Only run this on mobile
-    if (window.innerWidth <= 768) {
-      const li = event.currentTarget;
-      const submenu = li.querySelector(':scope > ul');
-  
-      // Detect if user clicked the link itself
-      const clickedLink = event.target.closest('a');
-  
-      // If submenu exists
-      if (submenu) {
-        // If user clicked on arrow or LI background (not the link)
-        if (event.target === li || event.target.parentElement === li) {
-          event.preventDefault();
-          li.classList.toggle('active');
-        }
-        // If clicked directly on <a>, open the link normally
-        else if (clickedLink && !submenu.contains(clickedLink)) {
-          window.location.href = clickedLink.href;
-        }
-      } 
-      // If no submenu → allow normal link navigation
-      else if (clickedLink) {
-        window.location.href = clickedLink.href;
+    if (window.innerWidth > 768) return;
+
+    const li = event.currentTarget;
+    const submenu = li.querySelector(':scope > ul');
+    const directLink = li.querySelector(':scope > a');
+
+    if (!submenu) return;
+
+    const clickedInsideDirectLink = directLink ? directLink.contains(event.target) : false;
+    const clickedCurrentItem = event.target === li || clickedInsideDirectLink;
+
+    if (!clickedCurrentItem) return;
+
+    const href = directLink ? directLink.getAttribute('href') : '';
+    const isPlaceholderLink = !href || href === '#';
+    const isOpen = li.classList.contains('active');
+
+    if (!isOpen || isPlaceholderLink) {
+      event.preventDefault();
+
+      const siblings = Array.from(li.parentElement.children).filter((item) => item !== li);
+      siblings.forEach((item) => item.classList.remove('active'));
+
+      if (isPlaceholderLink && isOpen) {
+        li.classList.remove('active');
+      } else {
+        li.classList.add('active');
       }
     }
   }
@@ -41,6 +48,8 @@
     const menu = document.getElementById('main-menu');
     const toggle = document.getElementById('menu-toggle');
   
+    if (!nav || !menu || !toggle) return;
+
     if (!nav.contains(e.target) && menu.classList.contains('active')) {
       menu.classList.remove('active');
       toggle.innerHTML = '☰';
@@ -53,6 +62,7 @@
     if (window.innerWidth > 768) {
       const menu = document.getElementById('main-menu');
       const toggle = document.getElementById('menu-toggle');
+      if (!menu || !toggle) return;
       menu.classList.remove('active');
       toggle.innerHTML = '☰';
       document.querySelectorAll('#main-menu li.active').forEach(item => item.classList.remove('active'));
@@ -98,4 +108,3 @@ function openEmail() {
         $(this).find(".acc content").slideUp(200);
       });
     });
-
