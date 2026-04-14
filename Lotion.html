@@ -1,264 +1,364 @@
-</html>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lotion</title>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-<link rel="stylesheet" type="text/css"
-  href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
-<link rel="stylesheet" href="./css/style.css" />
-<link rel="stylesheet" href="./css/responsive.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Body Lotion | KUKU Cosmetics</title>
+  <link rel="icon" type="image/png" href="image/favicon.svg">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
 </head>
-
 <body>
   <div class="header-spacing">
     <header class="header-container">
-        <div class="container">
-          <div class="top-header">
-            <div class="header-content">
-              <div class="logo-section">
-                <div class="logo">
-                  <a href="index.html" class="logo">
-                    <img src="./image/colored_logo.png" alt="KUKU Cosmetics Logo">
-                  </a>
-                </div>
-              </div>
-              <div class="company-info">
-                <div class="company-tagline">
-                  <p>Natural Beauty, Bold Confidence Cosmetic Manufacturing & Private Labeling</p>
-                </div>
-                <p class="company-description">
-                  Face care, Body care, Hair care, Personal care & Men's grooming products
-                  crafted for quality & confidence.
-                </p>
-              </div>
-              <div class="action-buttons">
-                <a href="contact us.html" class="btn btn-contact">Contact Us</a>
-                <a href="#chat" class="btn btn-chat">Chat Now</a>
+      <div class="container">
+        <div class="top-header">
+          <div class="header-content">
+            <div class="logo-section">
+              <div class="logo">
+                <a href="index.html" class="logo">
+                  <img src="./image/colored_logo.png" alt="KUKU Cosmetics Logo">
+                </a>
               </div>
             </div>
-          </div>
-        </div>
-        <nav>
-          <div class="container">
-            <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">☰</div>
-        
-            <ul id="main-menu">
-              <li><a href="index.html">Home</a></li>
-        
-              <li onclick="toggleSubmenu(event)">
-                <a href="#">Products ▾</a>
-                <ul>
-                  <li onclick="toggleSubmenu(event)">
-                    <a href="#">Face Care ▸</a>
-                    <ul>
-                   <li onclick="toggleSubmenu(event)">
-                                            <a href="Face Wash.html">Face Wash ▸</a>
-                                            <ul>
-                                                <li><a href="waterless face wash.html">Waterless Face Wash</a></li>
-                                            </ul>
-                                        </li>
-                      <li><a href="Face Serum.html">Face Serum</a></li>
-                      <li onclick="toggleSubmenu(event)">
-                        <a href="#">Sunscreen Lotion ▸</a>
-                        <ul>
-                          <li><a href="#">Invisible Sunscreen SPF 50-75</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="Sunscreen lotion.html">Sunscreen Lotion</a></li>
-                      <li><a href="Face Cream.html">Face Cream</a></li>
-                      <li><a href="Face toner.html">Face Toner</a></li>
-                      <li><a href="Face gel.html">Face Gel</a></li>
-                      <li><a href="Under eye gel.html">Under Eye Gel</a></li>
-                      <li><a href="Face peel.html">Face Peel</a></li>
-                    </ul>
-                  </li>
-        
-                  <li onclick="toggleSubmenu(event)">
-                    <a href="#">Hair Care ▸</a>
-                    <ul>
-                      <li><a href="Shampoo.html">Shampoo</a></li>
-                      <li><a href="Conditioner.html">Conditioner</a></li>
-                      <li><a href="Hair Serum.html">Hair Serum</a></li>
-                      <li><a href="Hair oil.html">Hair Oil</a></li>
-                    </ul>
-                  </li>
-        
-                  <li onclick="toggleSubmenu(event)">
-                    <a href="#">Intimate Care ▸</a>
-                    <ul>
-                      <li><a href="Lube Gel.html">Lube Gel</a></li>
-                      <li><a href="Menstrual Cup Lubricant.html">Menstrual Cup Lubricant</a></li>
-                      <li><a href="Intimate Foam Wash.html">Intimate Foam Wash</a></li>
-                      <li><a href="Intimate Gel Wash.html">Intimate Gel Wash</a></li>
-                      <li><a href="Menstrual Cup Wash.html">Menstrual Cup Wash</a></li>
-                      <li><a href="Intimate Whitening Cream.html">Intimate Whitening Cream</a></li>
-                      <li><a href="Breast Tightening Cream.html">Breast Tightening Cream</a></li>
-                      <li><a href="Penis Tightening Cream.html">Penis Tightening Cream</a></li>
-                      <li><a href="Penis Whitening Cream.html">Penis Whitening Cream</a></li>
-                      <li><a href="Vaginal Tightening Cream.html">Vaginal Tightening Cream</a></li>
-                      <li><a href="Stretch Mark Cream.html">Stretch Mark Cream</a></li>
-                      <li><a href="Stretch Mark Oil.html">Stretch Mark Oil</a></li>
-                      <li><a href="Intimate Moisturizing Oil.html">Intimate Moisturizing Oil</a></li>
-                      <li><a href="Breast Tightening Oil.html">Breast Tightening Oil</a></li>
-                    </ul>
-                  </li>
-        
-                  <li onclick="toggleSubmenu(event)">
-                    <a href="#">Body Care ▸</a>
-                    <ul>
-                      <li><a href="Body Wash.html">Body Wash</a></li>
-                      <li><a href="Body spray.html">Body Spray</a></li>
-                      <li><a href="Body sunscreen spray.html">Body Sunscreen Spray</a></li>
-                      <li><a href="Mosquito repellent cream.html">Mosquito Repellent Cream</a></li>
-                      <li><a href="Lotion.html">Lotion</a></li>
-                    </ul>
-                  </li>
-        
-                  <li onclick="toggleSubmenu(event)">
-                    <a href="#">Personal Care ▸</a>
-                    <ul>
-                      <li><a href="Under Arm Roller.html">Underarm Roller</a></li>
-                      <li><a href="Underarms Whitening Serum.html">Underarm Whitening Serum</a></li>
-                      <li><a href="Foot Crame.html">Foot Cream</a></li>
-                      <li><a href="Lip Balm.html">Lip Balm</a></li>
-                    </ul>
-                  </li>
-        
-                  <li onclick="toggleSubmenu(event)">
-                    <a href="#">Men's Grooming ▸</a>
-                    <ul>
-                      <li><a href="Beard Oil.html">Beard Oil</a></li>
-                      <li><a href="Beard Wash.html">Beard Wash</a></li>
-                      <li><a href="Beard Wax.html">Beard Wax (Strong Hold)</a></li>
-                    </ul>
-                  </li>
-        
-                  <li onclick="toggleSubmenu(event)">
-                    <a href="#">Baby Care ▸</a>
-                    <ul>
-                      <li><a href="Baby Cream.html">Baby Cream</a></li>
-                      <li><a href="Baby lotion.html">Baby Lotion</a></li>
-                      <li><a href="Baby shampoo.html">Baby Shampoo (Sulfate Free)</a></li>
-                      <li><a href="Baby face wash.html">Baby Face Wash</a></li>
-                      <li><a href="Baby hair oil.html">Baby Hair Oil</a></li>
-                      <li><a href="Baby massage oil.html">Baby Massage Oil</a></li>
-                      <li><a href="Baby sunscreen.html">Baby Sunscreen</a></li>
-                      <li><a href="Baby Lip Balm.html">Baby Lip Balm</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-        
-              <li><a href="manufacturing.html">Manufacturing</a></li>
-              <li><a href="Quality.html">Quality</a></li>
-              <li><a href="privetLable.html">Private Label</a></li>
-              <li><a href="contact us.html">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-  </div>
-
-
-<main>
-    <!-- banner-sec  -->
-   
-    
-
-      <!-- two-column-sec copy -->
-      <div class="two-column-sec privet-lab">
-        <div class="container">
-            <div class="two-column-wrap">
-                <div class="two-column-content">
-                    <h2>Lotion </h2>
-                <p>Our <strong> Body Lotion range </strong> is designed to hydrate, nourish, and protect the skin, leaving it soft, smooth, and radiant. Each lotion is enriched with carefully chosen actives to target specific skin needs while maintaining everyday skin health.
-</p>
-                    <ul>
-                <h6>Key Benefits:</h6>
-                <li>Provides long-lasting hydration</li>
-                <li>Improves skin texture and glow</li>
-<li>Protects against dryness and damage</li>
-<li>Lightweight, non-greasy & fast absorbing</li>
-<li>Suitable for daily use on all skin types</li>
-              </ul>
-              <h5>Types of Body Lotions
-            </h5>
-            <p>1.<strong>Moisturizing Lotion </strong>– Deep hydration with Shea Butter, Aloe Vera, Vitamin E.
-            </p>
-            <p>2.<strong>Brightening Lotion </strong> – Evens skin tone with Niacinamide, Vitamin C, Glutathione.
-            </p>
-            <p>3. <strong>Sunscreen Lotion </strong>– SPF protection with Zinc Oxide, Aloe Vera, Vitamin E.
-            </p>
-<p>4. <strong>Anti-Aging Lotion</strong>– Reduces fine lines with Retinol, Hyaluronic Acid, Collagen.
-</p>
-<p>5. <strong>Medicated Lotion</strong> – Soothes sensitive skin with Oatmeal, Panthenol, Ceramides.
-</p>
-<p>6. <strong>Firming & Toning Lotion </strong> – Improves elasticity with Caffeine, Green Tea, Seaweed.</p>
-<p>7. <strong>Baby Lotion </strong> – Gentle care with Almond Oil, Chamomile, Shea Butter.
-</p>
-
-<h5>Ideal For
-</h5>
-<p>Daily skin nourishment, protection, and targeted skin concerns — suitable for men, women, and children (gentle variants).</p>
+            <div class="company-info">
+              <div class="company-tagline">
+                <p>Natural Beauty, Bold Confidence Cosmetic Manufacturing &amp; Private Labeling</p>
               </div>
-                <div class="two-column-img">
-                    <img src="./image/lotion.svg" alt="img">
-                </div>
+              <p class="company-description">Face care, Body care, Hair care, Personal care &amp; Men's grooming products crafted for quality &amp; confidence.</p>
             </div>
+            <div class="action-buttons">
+              <a href="contact us.html" class="btn btn-contact">Contact Us</a>
+              <a href="https://wa.me/918866915181" class="btn btn-chat" target="_blank" rel="noopener noreferrer">Chat Now</a>
+            </div>
+          </div>
         </div>
       </div>
-</main>
+      <nav>
+        <div class="container">
+          <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">☰</div>
+
+          <ul id="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li onclick="toggleSubmenu(event)">
+              <a href="#">Products ▾</a>
+              <ul>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Face Care ▸</a>
+                  <ul>
+                    <li onclick="toggleSubmenu(event)">
+                      <a href="Face Wash.html">Face Wash ▸</a>
+                      <ul>
+                        <li><a href="waterless face wash.html">Waterless Face Wash</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="Face Serum.html">Face Serum</a></li>
+                    <li onclick="toggleSubmenu(event)">
+                      <a href="#">Sunscreen Lotion ▸</a>
+                      <ul>
+                        <li><a href="#">Invisible Sunscreen SPF 50-75</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="Sunscreen lotion.html">Sunscreen Lotion</a></li>
+                    <li><a href="Face Cream.html">Face Cream</a></li>
+                    <li><a href="Face toner.html">Face Toner</a></li>
+                    <li><a href="Face gel.html">Face Gel</a></li>
+                    <li><a href="Under eye gel.html">Under Eye Gel</a></li>
+                    <li><a href="Face peel.html">Face Peel</a></li>
+                  </ul>
+                </li>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Hair Care ▸</a>
+                  <ul>
+                    <li><a href="Shampoo.html">Shampoo</a></li>
+                    <li><a href="Conditioner.html">Conditioner</a></li>
+                    <li><a href="Hair Serum.html">Hair Serum</a></li>
+                    <li><a href="Hair oil.html">Hair Oil</a></li>
+                  </ul>
+                </li>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Intimate Care ▸</a>
+                  <ul>
+                    <li><a href="Lube Gel.html">Lube Gel</a></li>
+                    <li><a href="Menstrual Cup Lubricant.html">Menstrual Cup Lubricant</a></li>
+                    <li><a href="Intimate Foam Wash.html">Intimate Foam Wash</a></li>
+                    <li><a href="Intimate Gel Wash.html">Intimate Gel Wash</a></li>
+                    <li><a href="Menstrual Cup Wash.html">Menstrual Cup Wash</a></li>
+                    <li><a href="Intimate Whitening Cream.html">Intimate Whitening Cream</a></li>
+                    <li><a href="Breast Tightening Cream.html">Breast Tightening Cream</a></li>
+                    <li><a href="Penis Tightening Cream.html">Penis Tightening Cream</a></li>
+                    <li><a href="Penis Whitening Cream.html">Penis Whitening Cream</a></li>
+                    <li><a href="Vaginal Tightening Cream.html">Vaginal Tightening Cream</a></li>
+                    <li><a href="Stretch Mark Cream.html">Stretch Mark Cream</a></li>
+                    <li><a href="Stretch Mark Oil.html">Stretch Mark Oil</a></li>
+                    <li><a href="Intimate Moisturizing Oil.html">Intimate Moisturizing Oil</a></li>
+                    <li><a href="Breast Tightening Oil.html">Breast Tightening Oil</a></li>
+                  </ul>
+                </li>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Body Care ▸</a>
+                  <ul>
+                    <li><a href="Body Wash.html">Body Wash</a></li>
+                    <li><a href="Body spray.html">Body Spray</a></li>
+                    <li><a href="Body sunscreen spray.html">Body Sunscreen Spray</a></li>
+                    <li><a href="Mosquito repellent cream.html">Mosquito Repellent Cream</a></li>
+                    <li><a href="Lotion.html">Lotion</a></li>
+                  </ul>
+                </li>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Personal Care ▸</a>
+                  <ul>
+                    <li><a href="Under Arm Roller.html">Underarm Roller</a></li>
+                    <li><a href="Underarms Whitening Serum.html">Underarm Whitening Serum</a></li>
+                    <li><a href="Foot Crame.html">Foot Cream</a></li>
+                    <li><a href="Lip Balm.html">Lip Balm</a></li>
+                  </ul>
+                </li>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Men's Grooming ▸</a>
+                  <ul>
+                    <li><a href="Beard Oil.html">Beard Oil</a></li>
+                    <li><a href="Beard Wash.html">Beard Wash</a></li>
+                    <li><a href="Beard Wax.html">Beard Wax (Strong Hold)</a></li>
+                  </ul>
+                </li>
+                <li onclick="toggleSubmenu(event)">
+                  <a href="#">Baby Care ▸</a>
+                  <ul>
+                    <li><a href="Baby Cream.html">Baby Cream</a></li>
+                    <li><a href="Baby lotion.html">Baby Lotion</a></li>
+                    <li><a href="Baby shampoo.html">Baby Shampoo (Sulfate Free)</a></li>
+                    <li><a href="Baby face wash.html">Baby Face Wash</a></li>
+                    <li><a href="Baby hair oil.html">Baby Hair Oil</a></li>
+                    <li><a href="Baby massage oil.html">Baby Massage Oil</a></li>
+                    <li><a href="Baby sunscreen.html">Baby Sunscreen</a></li>
+                    <li><a href="Baby Lip Balm.html">Baby Lip Balm</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="manufacturing.html">Manufacturing</a></li>
+            <li><a href="Quality.html">Quality</a></li>
+            <li><a href="privetLable.html">Private Label</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+  </div>
+  <main class="collection-page">
+    <section class="collection-hero">
+      <div class="container">
+        <div class="collection-hero-inner">
+          <div class="collection-hero-copy">
+            <span class="collection-eyebrow">Body Care Collection</span>
+            <h1>Body Lotion</h1>
+            <h2>Daily hydration, nourishment and skin comfort</h2>
+            <p>At Kuku Cosmetics, we manufacture a wide range of body lotions formulated to hydrate, soften, and protect the skin. Our lotion formulations are designed with lightweight to rich textures for fast absorption and long-lasting moisture.</p>
+            <ul class="collection-highlight-list"><li>Lightweight and non-greasy options</li><li>Long-lasting hydration</li><li>Suitable for all skin types</li><li>Custom actives and fragrance options</li></ul>
+            <div class="collection-hero-actions">
+              <a href="contact us.html" class="btn">Request Formulation</a>
+              <a href="privetLable.html" class="secondary-link">Explore Private Label</a>
+            </div>
+          </div>
+          <div class="collection-hero-visual">
+            <div class="collection-image-frame">
+              <img src="./image/lotion.svg" alt="Body Lotion">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="collection-overview">
+      <div class="container">
+        <div class="collection-overview-grid">
+          <div class="collection-overview-copy">
+            <span class="section-label">Overview</span>
+            <h2>Body Lotion manufacturing with structure built in</h2>
+            <p>At Kuku Cosmetics, we manufacture a wide range of body lotions formulated to hydrate, soften, and protect the skin. Our lotion formulations are designed with lightweight to rich textures for fast absorption and long-lasting moisture.</p>
+          </div>
+          <div class="collection-overview-points">
+            
+              <article class="overview-point">
+                <strong>Lightweight and non-greasy options</strong>
+                <p>Aligned for scalable private label and contract manufacturing workflows.</p>
+              </article>
+            
+              <article class="overview-point">
+                <strong>Long-lasting hydration</strong>
+                <p>Aligned for scalable private label and contract manufacturing workflows.</p>
+              </article>
+            
+              <article class="overview-point">
+                <strong>Suitable for all skin types</strong>
+                <p>Aligned for scalable private label and contract manufacturing workflows.</p>
+              </article>
+            
+              <article class="overview-point">
+                <strong>Custom actives and fragrance options</strong>
+                <p>Aligned for scalable private label and contract manufacturing workflows.</p>
+              </article>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+        <section class="collection-section">
+          <div class="container">
+            <div class="collection-section-heading">
+              <span>Hydrating &amp; Moisturizing Body Lotion Range</span>
+              <p>Designed for daily skin hydration and softness.</p>
+            </div>
+            <div class="collection-grid">
+              
+                <article class="collection-card">
+                  <h3>Moisturizing Body Lotion</h3>
+                  <p>Maintains skin hydration</p>
+                </article>
+              
+                <article class="collection-card">
+                  <h3>Hydrating Body Lotion</h3>
+                  <p>Supports moisture balance</p>
+                </article>
+              
+                <article class="collection-card">
+                  <h3>Deep Nourishing Body Lotion</h3>
+                  <p>Rich care for dry skin</p>
+                </article>
+              
+                <article class="collection-card">
+                  <h3>Lightweight Body Lotion</h3>
+                  <p>Fast-absorbing daily use</p>
+                </article>
+              
+            </div>
+          </div>
+        </section>
+  
+        <section class="collection-section">
+          <div class="container">
+            <div class="collection-section-heading">
+              <span>Herbal &amp; Natural Body Lotion Range</span>
+              <p>Infused with botanical ingredients for gentle care.</p>
+            </div>
+            <div class="collection-grid">
+              
+                <article class="collection-card">
+                  <h3>Aloe Vera Body Lotion</h3>
+                  <p>Soothing and hydrating</p>
+                </article>
+              
+                <article class="collection-card">
+                  <h3>Herbal Body Lotion</h3>
+                  <p>Botanical blend for healthy skin</p>
+                </article>
+              
+                <article class="collection-card">
+                  <h3>Coconut Body Lotion</h3>
+                  <p>Deep nourishment and softness</p>
+                </article>
+              
+                <article class="collection-card">
+                  <h3>Almond Body Lotion</h3>
+                  <p>Improves smoothness and glow</p>
+                </article>
+              
+            </div>
+          </div>
+        </section>
+  
+        <section class="collection-section">
+          <div class="container">
+            <div class="collection-section-heading">
+              <span>Brightening &amp; Specialized Body Lotion Range</span>
+              <p>Enhances skin radiance and supports specific skin needs.</p>
+            </div>
+            <div class="collection-grid">
+              
+                <article class="collection-card">
+                  <h3>Vitamin C Body Lotion</h3>
+                  <p>Brightening and antioxidant care</p>
+                </article>
+              
+                <article class="collection-card">
+                  <h3>Glow Body Lotion</h3>
+                  <p>Improves skin radiance</p>
+                </article>
+              
+                <article class="collection-card">
+                  <h3>Even Tone Body Lotion</h3>
+                  <p>Supports uniform skin appearance</p>
+                </article>
+              
+                <article class="collection-card">
+                  <h3>Sensitive Skin Body Lotion</h3>
+                  <p>Mild and soothing</p>
+                </article>
+              
+                <article class="collection-card">
+                  <h3>Men&#39;s Body Lotion</h3>
+                  <p>Non-greasy daily hydration</p>
+                </article>
+              
+            </div>
+          </div>
+        </section>
+  
+    <section class="collection-cta">
+      <div class="container">
+        <div class="collection-cta-box">
+          <div>
+            <span class="section-label">Why KUKU Cosmetics</span>
+            <h2>Complete body lotion manufacturing</h2>
+            <p>Every range can be adapted around positioning, texture, actives, fragrance profile, packaging, and commercial targets while keeping the current product architecture easy to navigate.</p>
+          </div>
+          <ul class="collection-cta-list"><li>Texture customization from light to rich lotion</li><li>Active and botanical ingredient selection</li><li>Fragrance and sensory customization</li><li>Bottle, pump and tube packaging</li><li>MOQ flexibility and regulatory support</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  
 <footer class="footer">
   <div class="container">
     <div class="footer-inner">
       <div class="footer-right">
         <div class="logo-img">
-          <a href=""><img src="./image/KUKU COSMETICS (1).svg" alt="logo"></a>
+          <a href="index.html"><img src="./image/KUKU COSMETICS (1).svg" alt="logo"></a>
         </div>
         <div class="footer-content">
-          <p>328 sahitya industrial park, kujad road bakrol - bujarang - dascroi, Ahmedabad-382430, Gujarat,
-            India.</p>
+          <p>328 sahitya industrial park, kujad road bakrol - bujarang - dascroi, Ahmedabad-382430, Gujarat, India.</p>
         </div>
         <div class="social-icon">
-          <!-- <div class="social-icon-img">
-    <a href=""><img src="./image/facebook-f-brands-solid-full.svg" alt="img"></a>
-  </div>
-  <div class="social-icon-img">
-    <a href=""><img src="./image/instagram-brands-solid-full.svg" alt="img"></a>
-  </div>
-  <div class="social-icon-img">
-      <a href=""><img src="./image/twitter-brands-solid-full.svg" alt="img"></a>
-  </div> -->
           <div class="social-icon-img">
-      <a href="https://wa.me/918866915181" target="_blank">
-        <img src="./image/whatsapp-brands-solid-full.svg" alt="WhatsApp">
-      </a>
-    </div>
+            <a href="https://wa.me/918866915181" target="_blank" rel="noopener noreferrer">
+              <img src="./image/whatsapp-brands-solid-full.svg" alt="WhatsApp">
+            </a>
+          </div>
         </div>
       </div>
       <div class="footer-left">
         <div class="footer-left-menu">
           <h6>Category</h6>
           <ul>
-            <li><a href="#">Face care</a></li>
-            <li><a href="#">Hair Care</a></li>
-            <li><a href="#">Intimate Care</a></li>
-            <li><a href="#">Body Care</a></li>
-            <li><a href="#">Personal Care</a></li>
-            <li><a href="#">Men's Grooming </a></li>
-            <li><a href="#">Baby Care </a></li>
+            <li><a href="Face Wash.html">Face care</a></li>
+            <li><a href="Hair Care.html">Hair Care</a></li>
+            <li><a href="Intimate Gel Wash.html">Intimate Care</a></li>
+            <li><a href="Body Care.html">Body Care</a></li>
+            <li><a href="Personal Care.html">Personal Care</a></li>
+            <li><a href="Mens Grooming.html">Men's Grooming</a></li>
+            <li><a href="Baby Cream.html">Baby Care</a></li>
           </ul>
         </div>
         <div class="footer-left-menu">
           <h6>Services</h6>
           <ul>
-            <li><a href="#">Private Label</a></li>
-            <li><a href="#">Manufacturing</a></li>
+            <li><a href="privetLable.html">Private Label</a></li>
+            <li><a href="manufacturing.html">Manufacturing</a></li>
+            <li><a href="Quality.html">Quality</a></li>
           </ul>
         </div>
         <div class="footer-left-menu">
@@ -267,42 +367,28 @@
             <div class="location-img">
               <img src="./image/fi_542689.png" alt="mail">
             </div>
-             <a href="#" 
-              onclick="openEmail()">
-             kukucosmetics25@gmail.com
-           </a>
-            
+            <a href="#" onclick="openEmail()">kukucosmetics25@gmail.com</a>
           </div>
           <div class="location phone">
             <div class="location-img">
               <img src="./image/fi_152851.png" alt="phone">
             </div>
-            <a href="tel:886-691-5181">+91 8866915181</a>
+            <a href="tel:8866915181">+91 8866915181</a>
           </div>
           <div class="location email">
             <div class="location-img">
               <img src="./image/Group (35).png" alt="location">
             </div>
-            <p><a href="https://www.google.com/maps?q=328+sahitya+industrial+park,+kujad+road+bakrol+-+bujarang+-+dascroi,+Ahmedabad" 
-              target="_blank">
-             328 sahitya industrial park, kujad road bakrol - bujarang - dascroi, Ahmedabad.
-           </a>
-       </p>
+            <p><a href="https://www.google.com/maps?q=328+sahitya+industrial+park,+kujad+road+bakrol+-+bujarang+-+dascroi,+Ahmedabad" target="_blank" rel="noopener noreferrer">328 sahitya industrial park, kujad road bakrol - bujarang - dascroi, Ahmedabad.</a></p>
           </div>
         </div>
       </div>
     </div>
-
   </div>
+</footer>
 
-  </footer>
   <script src="./js/script.js"></script>
-<script src="./js/jquery.min.js"></script>
-<script type="text/javascript" src="./js/slick.min.js"></script>
-
-
-
-  
+  <script src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/slick.min.js"></script>
 </body>
-
 </html>
