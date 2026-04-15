@@ -130,6 +130,24 @@ font-family: var(--poppins);
 font-size: 14px;
 line-height: 1.4;
 color: var(--secondry_color);
+overflow-x: hidden;
+}
+
+html,
+body {
+max-width: 100%;
+overflow-x: hidden;
+}
+
+body.menu-open {
+overflow: hidden;
+}
+
+img,
+svg,
+video,
+iframe {
+max-width: 100%;
 }
 
 .container {
@@ -251,6 +269,10 @@ nav {
   border-top: 1px solid #e9ecef;
   position: relative;
   z-index: 2000;
+}
+
+nav .container {
+  position: relative;
 }
 
 #main-menu {
@@ -2685,4 +2707,29 @@ align-items: flex-start;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
+}
+
+.header-content > *,
+.footer-inner > *,
+.footer-left > *,
+.banner-sec .banner-item > *,
+.faq-wrap > *,
+.service-content > *,
+.two-column-wrap > *,
+.three-column-inner > *,
+.collection-hero-inner > *,
+.collection-overview-grid > *,
+.collection-cta-box > * {
+  min-width: 0;
+}
+
+#main-menu a,
+.collection-hero-copy h1,
+.collection-hero-copy h2,
+.collection-overview-copy h2,
+.collection-cta-box h2,
+.collection-card h3,
+.overview-point strong,
+.footer-content p {
+  overflow-wrap: anywhere;
 }

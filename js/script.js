@@ -1,5 +1,12 @@
 // <!-- header open  -->
 
+  const NAV_BREAKPOINT = 1100;
+
+  function syncMenuState(menu) {
+    if (!menu) return;
+    document.body.classList.toggle('menu-open', window.innerWidth <= NAV_BREAKPOINT && menu.classList.contains('active'));
+  }
+
   function toggleMenu() {
     const menu = document.getElementById('main-menu');
     const toggle = document.getElementById('menu-toggle');
@@ -8,10 +15,11 @@
 
     menu.classList.toggle('active');
     toggle.innerHTML = menu.classList.contains('active') ? '✕' : '☰';
+    syncMenuState(menu);
   }
   
   function toggleSubmenu(event) {
-    if (window.innerWidth > 768) return;
+    if (window.innerWidth > NAV_BREAKPOINT) return;
 
     const li = event.currentTarget;
     const submenu = li.querySelector(':scope > ul');
@@ -54,19 +62,24 @@
       menu.classList.remove('active');
       toggle.innerHTML = '☰';
       document.querySelectorAll('#main-menu li.active').forEach(item => item.classList.remove('active'));
+      syncMenuState(menu);
     }
   });
   
   // Reset on desktop resize
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-      const menu = document.getElementById('main-menu');
-      const toggle = document.getElementById('menu-toggle');
-      if (!menu || !toggle) return;
+    const menu = document.getElementById('main-menu');
+    const toggle = document.getElementById('menu-toggle');
+
+    if (!menu || !toggle) return;
+
+    if (window.innerWidth > NAV_BREAKPOINT) {
       menu.classList.remove('active');
       toggle.innerHTML = '☰';
       document.querySelectorAll('#main-menu li.active').forEach(item => item.classList.remove('active'));
     }
+
+    syncMenuState(menu);
   });
  
 
