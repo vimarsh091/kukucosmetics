@@ -12,90 +12,90 @@ const menuHtml = `
                 <li onclick="toggleSubmenu(event)">
                   <a href="#">Face Care ▸</a>
                   <ul>
-                    <li><a href="Face Wash.html">Face Wash</a></li>
-                    <li><a href="Face Serum.html">Face Serum</a></li>
-                    <li><a href="Sunscreen lotion.html">Sunscreen Lotion</a></li>
-                    <li><a href="Face Cream.html">Face Cream</a></li>
-                    <li><a href="Face toner.html">Face Toner</a></li>
-                    <li><a href="Face gel.html">Face Gel</a></li>
-                    <li><a href="Under eye gel.html">Under Eye Gel</a></li>
-                    <li><a href="Face peel.html">Face Peel</a></li>
+                    <li><a href="face-wash.html">Face Wash</a></li>
+                    <li><a href="face-serum.html">Face Serum</a></li>
+                    <li><a href="sunscreen-lotion.html">Sunscreen Lotion</a></li>
+                    <li><a href="face-cream.html">Face Cream</a></li>
+                    <li><a href="face-toner.html">Face Toner</a></li>
+                    <li><a href="face-gel.html">Face Gel</a></li>
+                    <li><a href="under-eye-gel.html">Under Eye Gel</a></li>
+                    <li><a href="face-peel.html">Face Peel</a></li>
                   </ul>
                 </li>
                 <li onclick="toggleSubmenu(event)">
                   <a href="#">Hair Care ▸</a>
                   <ul>
-                    <li><a href="Shampoo.html">Shampoo</a></li>
-                    <li><a href="Conditioner.html">Conditioner</a></li>
-                    <li><a href="Hair Serum.html">Hair Serum</a></li>
-                    <li><a href="Hair oil.html">Hair Oil</a></li>
+                    <li><a href="shampoo.html">Shampoo</a></li>
+                    <li><a href="conditioner.html">Conditioner</a></li>
+                    <li><a href="hair-serum.html">Hair Serum</a></li>
+                    <li><a href="hair-oil.html">Hair Oil</a></li>
                   </ul>
                 </li>
                 <li onclick="toggleSubmenu(event)">
                   <a href="#">Intimate Care ▸</a>
                   <ul>
-                    <li><a href="Lube Gel.html">Lube Gel</a></li>
-                    <li><a href="Menstrual Cup Lubricant.html">Menstrual Cup Lubricant</a></li>
-                    <li><a href="Intimate Foam Wash.html">Intimate Foam Wash</a></li>
-                    <li><a href="Intimate Gel Wash.html">Intimate Gel Wash</a></li>
-                    <li><a href="Menstrual Cup Wash.html">Menstrual Cup Wash</a></li>
-                    <li><a href="Intimate Whitening Cream.html">Intimate Whitening Cream</a></li>
-                    <li><a href="Breast Tightening Cream.html">Breast Tightening Cream</a></li>
-                    <li><a href="Penis Tightening Cream.html">Penis Tightening Cream</a></li>
-                    <li><a href="Penis Whitening Cream.html">Penis Whitening Cream</a></li>
-                    <li><a href="Vaginal Tightening Cream.html">Vaginal Tightening Cream</a></li>
-                    <li><a href="Stretch Mark Cream.html">Stretch Mark Cream</a></li>
-                    <li><a href="Stretch Mark Oil.html">Stretch Mark Oil</a></li>
-                    <li><a href="Intimate Moisturizing Oil.html">Intimate Moisturizing Oil</a></li>
-                    <li><a href="Breast Tightening Oil.html">Breast Tightening Oil</a></li>
+                    <li><a href="lube-gel.html">Lube Gel</a></li>
+                    <li><a href="menstrual-cup-lubricant.html">Menstrual Cup Lubricant</a></li>
+                    <li><a href="intimate-foam-wash.html">Intimate Foam Wash</a></li>
+                    <li><a href="intimate-gel-wash.html">Intimate Gel Wash</a></li>
+                    <li><a href="menstrual-cup-wash.html">Menstrual Cup Wash</a></li>
+                    <li><a href="intimate-whitening-cream.html">Intimate Whitening Cream</a></li>
+                    <li><a href="breast-tightening-cream.html">Breast Tightening Cream</a></li>
+                    <li><a href="penis-tightening-cream.html">Penis Tightening Cream</a></li>
+                    <li><a href="penis-whitening-cream.html">Penis Whitening Cream</a></li>
+                    <li><a href="vaginal-tightening-cream.html">Vaginal Tightening Cream</a></li>
+                    <li><a href="stretch-mark-cream.html">Stretch Mark Cream</a></li>
+                    <li><a href="stretch-mark-oil.html">Stretch Mark Oil</a></li>
+                    <li><a href="intimate-moisturizing-oil.html">Intimate Moisturizing Oil</a></li>
+                    <li><a href="breast-tightening-oil.html">Breast Tightening Oil</a></li>
                   </ul>
                 </li>
                 <li onclick="toggleSubmenu(event)">
                   <a href="#">Body Care ▸</a>
                   <ul>
-                    <li><a href="Body Wash.html">Body Wash</a></li>
-                    <li><a href="Body spray.html">Body Spray</a></li>
-                    <li><a href="Body sunscreen spray.html">Body Sunscreen Spray</a></li>
-                    <li><a href="Mosquito repellent cream.html">Mosquito Repellent Cream</a></li>
-                    <li><a href="Lotion.html">Lotion</a></li>
+                    <li><a href="body-wash.html">Body Wash</a></li>
+                    <li><a href="body-spray.html">Body Spray</a></li>
+                    <li><a href="body-sunscreen-spray.html">Body Sunscreen Spray</a></li>
+                    <li><a href="mosquito-repellent-cream.html">Mosquito Repellent Cream</a></li>
+                    <li><a href="lotion.html">Lotion</a></li>
                   </ul>
                 </li>
                 <li onclick="toggleSubmenu(event)">
                   <a href="#">Personal Care ▸</a>
                   <ul>
-                    <li><a href="Under Arm Roller.html">Underarm Roller</a></li>
-                    <li><a href="Underarms Whitening Serum.html">Underarm Whitening Serum</a></li>
-                    <li><a href="Foot Crame.html">Foot Cream</a></li>
-                    <li><a href="Lip Balm.html">Lip Balm</a></li>
+                    <li><a href="under-arm-roller.html">Underarm Roller</a></li>
+                    <li><a href="underarms-whitening-serum.html">Underarm Whitening Serum</a></li>
+                    <li><a href="foot-cream.html">Foot Cream</a></li>
+                    <li><a href="lip-balm.html">Lip Balm</a></li>
                   </ul>
                 </li>
                 <li onclick="toggleSubmenu(event)">
                   <a href="#">Men's Grooming ▸</a>
                   <ul>
-                    <li><a href="Beard Oil.html">Beard Oil</a></li>
-                    <li><a href="Beard Wash.html">Beard Wash</a></li>
-                    <li><a href="Beard Wax.html">Beard Wax (Strong Hold)</a></li>
+                    <li><a href="beard-oil.html">Beard Oil</a></li>
+                    <li><a href="beard-wash.html">Beard Wash</a></li>
+                    <li><a href="beard-wax.html">Beard Wax (Strong Hold)</a></li>
                   </ul>
                 </li>
                 <li onclick="toggleSubmenu(event)">
                   <a href="#">Baby Care ▸</a>
                   <ul>
-                    <li><a href="Baby Cream.html">Baby Cream</a></li>
-                    <li><a href="Baby lotion.html">Baby Lotion</a></li>
-                    <li><a href="Baby shampoo.html">Baby Shampoo (Sulfate Free)</a></li>
-                    <li><a href="Baby face wash.html">Baby Face Wash</a></li>
-                    <li><a href="Baby hair oil.html">Baby Hair Oil</a></li>
-                    <li><a href="Baby massage oil.html">Baby Massage Oil</a></li>
-                    <li><a href="Baby sunscreen.html">Baby Sunscreen</a></li>
-                    <li><a href="Baby Lip Balm.html">Baby Lip Balm</a></li>
+                    <li><a href="baby-cream.html">Baby Cream</a></li>
+                    <li><a href="baby-lotion.html">Baby Lotion</a></li>
+                    <li><a href="baby-shampoo.html">Baby Shampoo (Sulfate Free)</a></li>
+                    <li><a href="baby-face-wash.html">Baby Face Wash</a></li>
+                    <li><a href="baby-hair-oil.html">Baby Hair Oil</a></li>
+                    <li><a href="baby-massage-oil.html">Baby Massage Oil</a></li>
+                    <li><a href="baby-sunscreen.html">Baby Sunscreen</a></li>
+                    <li><a href="baby-lip-balm.html">Baby Lip Balm</a></li>
                   </ul>
                 </li>
               </ul>
             </li>
             <li><a href="manufacturing.html">Manufacturing</a></li>
-            <li><a href="Quality.html">Quality</a></li>
-            <li><a href="privetLable.html">Private Label</a></li>
-            <li><a href="contact us.html">Contact</a></li>
+            <li><a href="quality.html">Quality</a></li>
+            <li><a href="private-label.html">Private Label</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
           </ul>
 `;
 
@@ -122,21 +122,21 @@ const footerHtml = `
         <div class="footer-left-menu">
           <h6>Category</h6>
           <ul>
-            <li><a href="Face Wash.html">Face care</a></li>
-            <li><a href="Hair Care.html">Hair Care</a></li>
-            <li><a href="Intimate Gel Wash.html">Intimate Care</a></li>
-            <li><a href="Body Care.html">Body Care</a></li>
-            <li><a href="Personal Care.html">Personal Care</a></li>
-            <li><a href="Mens Grooming.html">Men's Grooming</a></li>
-            <li><a href="Baby Cream.html">Baby Care</a></li>
+            <li><a href="face-wash.html">Face care</a></li>
+            <li><a href="hair-care.html">Hair Care</a></li>
+            <li><a href="intimate-gel-wash.html">Intimate Care</a></li>
+            <li><a href="body-care.html">Body Care</a></li>
+            <li><a href="personal-care.html">Personal Care</a></li>
+            <li><a href="mens-grooming.html">Men's Grooming</a></li>
+            <li><a href="baby-cream.html">Baby Care</a></li>
           </ul>
         </div>
         <div class="footer-left-menu">
           <h6>Services</h6>
           <ul>
-            <li><a href="privetLable.html">Private Label</a></li>
+            <li><a href="private-label.html">Private Label</a></li>
             <li><a href="manufacturing.html">Manufacturing</a></li>
-            <li><a href="Quality.html">Quality</a></li>
+            <li><a href="quality.html">Quality</a></li>
           </ul>
         </div>
         <div class="footer-left-menu">
@@ -168,7 +168,7 @@ const footerHtml = `
 
 const pages = [
   {
-    file: "Face Wash.html",
+    file: "face-wash.html",
     title: "Face Wash",
     eyebrow: "Face Care Collection",
     image: "./image/face wash 2.png",
@@ -184,7 +184,7 @@ const pages = [
     ctaItems: ["Active concentration customization", "Texture and fragrance selection", "Color and packaging options", "MOQ flexibility", "Regulatory and quality support"],
   },
   {
-    file: "Face Serum.html",
+    file: "face-serum.html",
     title: "Face Serum",
     eyebrow: "Face Care Collection",
     image: "./image/face serum 1.png",
@@ -200,7 +200,7 @@ const pages = [
     ctaItems: ["Active concentration customization", "Texture and absorption profile selection", "Fragrance-free and sensitive-skin options", "Packaging in dropper, pump and airless", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Sunscreen lotion.html",
+    file: "sunscreen-lotion.html",
     title: "Sunscreen Lotion",
     eyebrow: "Sun Care Collection",
     image: "./image/sunscreen multiple.png",
@@ -215,7 +215,7 @@ const pages = [
     ctaItems: ["SPF 30, SPF 50 and SPF 50+ options", "PA rating choices from PA++ to PA++++", "Water-resistance testing support", "Mineral, chemical and hybrid filter systems", "Custom packaging and MOQ flexibility"],
   },
   {
-    file: "Face Cream.html",
+    file: "face-cream.html",
     title: "Face Cream",
     eyebrow: "Face Care Collection",
     image: "./image/face cream 1.png",
@@ -231,7 +231,7 @@ const pages = [
     ctaItems: ["Texture customization across gel, lotion and rich cream", "Active ingredient selection and concentration", "Fragrance-free and sensitive-skin options", "Jar, tube and airless pump packaging", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Face toner.html",
+    file: "face-toner.html",
     title: "Face Toner",
     eyebrow: "Face Care Collection",
     image: "./image/face toner 1.png",
@@ -247,7 +247,7 @@ const pages = [
     ctaItems: ["Alcohol-free and low-irritation bases", "Active and botanical customization", "Fragrance-free options", "Bottle, spray and mist packaging", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Face gel.html",
+    file: "face-gel.html",
     title: "Face Gel",
     eyebrow: "Face Care Collection",
     image: "./image/face gel 1.png",
@@ -263,7 +263,7 @@ const pages = [
     ctaItems: ["Active and botanical customization", "Oil-free, fragrance-free and sensitive-skin options", "Texture and viscosity control", "Jar, tube and pump packaging", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Under eye gel.html",
+    file: "under-eye-gel.html",
     title: "Under Eye Gel",
     eyebrow: "Eye Care Collection",
     image: "./image/under eye gel.png",
@@ -279,7 +279,7 @@ const pages = [
     ctaItems: ["Active ingredient customization", "Cooling and de-puffing formulas", "Fragrance-free and sensitive-skin options", "Tube, roll-on and airless packaging", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Face peel.html",
+    file: "face-peel.html",
     title: "Face Peel",
     eyebrow: "Exfoliation Collection",
     image: "./image/face peel.png",
@@ -295,7 +295,7 @@ const pages = [
     ctaItems: ["Active type and concentration customization", "pH and exposure-time control", "Home-care and professional-strength options", "Fragrance-free and sensitive-skin formulations", "Dropper bottle, pump and tube packaging"],
   },
   {
-    file: "Hair Serum.html",
+    file: "hair-serum.html",
     title: "Hair Serum",
     eyebrow: "Hair Care Collection",
     image: "./image/hair serum.png",
@@ -311,7 +311,7 @@ const pages = [
     ctaItems: ["Silicone-based and silicone-free options", "Active and oil customization", "Fragrance and texture customization", "Pump, dropper and airless packaging", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Hair oil.html",
+    file: "hair-oil.html",
     title: "Hair Oil",
     eyebrow: "Hair Care Collection",
     image: "./image/hair oil.png",
@@ -327,7 +327,7 @@ const pages = [
     ctaItems: ["Oil blend customization", "Herbal extract infusion", "Fragrance and sensory customization", "Bottle, pump and dropper packaging", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Shampoo.html",
+    file: "shampoo.html",
     title: "Shampoo",
     eyebrow: "Hair Care Collection",
     image: "./image/hair shampoo 2.png",
@@ -343,7 +343,7 @@ const pages = [
     ctaItems: ["Sulfate-free, silicone-free and mild cleanser systems", "Active and herbal customization", "Adult, baby and pet-specific bases", "Bottle, pump and sachet packaging", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Conditioner.html",
+    file: "conditioner.html",
     title: "Conditioner",
     eyebrow: "Hair Care Collection",
     image: "./image/Hair conditioner 1.png",
@@ -359,7 +359,7 @@ const pages = [
     ctaItems: ["Silicone-free and lightweight options", "Herbal and active customization", "Fragrance and texture control", "Tube, bottle and pump packaging", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Body Wash.html",
+    file: "body-wash.html",
     title: "Body Wash",
     eyebrow: "Body Care Collection",
     image: "./image/body wash2.png",
@@ -375,7 +375,7 @@ const pages = [
     ctaItems: ["Sulfate-free and mild surfactant systems", "Active and botanical customization", "Fragrance and viscosity control", "Bottle, pump and tube packaging", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Lotion.html",
+    file: "lotion.html",
     title: "Body Lotion",
     eyebrow: "Body Care Collection",
     image: "./image/body lotion 3.png",
@@ -399,6 +399,30 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+const siteUrl = "https://kukucosmetics.com";
+
+function getSeoMetadata(page) {
+  const url = `${siteUrl}/${page.file}`;
+  const title = `${page.title} Manufacturer | KUKU Cosmetics`;
+  const description = `KUKU Cosmetics offers private label ${page.title.toLowerCase()} manufacturing in India, with custom formulations, packaging options and quality-focused production support.`;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: title,
+    url,
+    description,
+    inLanguage: "en-IN",
+    publisher: {
+      "@type": "Organization",
+      name: "KUKU Cosmetics",
+      url: `${siteUrl}/`,
+      logo: `${siteUrl}/image/colored_logo.png`,
+    },
+  };
+
+  return { url, title, description, schema: JSON.stringify(schema) };
 }
 
 function renderList(items) {
@@ -431,17 +455,33 @@ function renderRange(range) {
 }
 
 function renderPage(page) {
+  const seo = getSeoMetadata(page);
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${escapeHtml(page.title)} | KUKU Cosmetics</title>
+  <title>${escapeHtml(seo.title)}</title>
   <link rel="icon" type="image/png" href="image/favicon.svg">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/responsive.css" />
+  <!-- SEO metadata -->
+  <meta name="description" content="${escapeHtml(seo.description)}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="${seo.url}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KUKU Cosmetics">
+  <meta property="og:title" content="${escapeHtml(seo.title)}">
+  <meta property="og:description" content="${escapeHtml(seo.description)}">
+  <meta property="og:url" content="${seo.url}">
+  <meta property="og:image" content="${siteUrl}/image/colored_logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${escapeHtml(seo.title)}">
+  <meta name="twitter:description" content="${escapeHtml(seo.description)}">
+  <meta name="twitter:image" content="${siteUrl}/image/colored_logo.png">
+  <script type="application/ld+json">${seo.schema}</script>
 </head>
 <body>
   <div class="header-spacing">
@@ -463,7 +503,7 @@ function renderPage(page) {
               <p class="company-description">Face care, Body care, Hair care, Personal care &amp; Men's grooming products crafted for quality &amp; confidence.</p>
             </div>
             <div class="action-buttons">
-              <a href="contact us.html" class="btn btn-contact">Contact Us</a>
+              <a href="contact-us.html" class="btn btn-contact">Contact Us</a>
               <a href="https://wa.me/918866915181" class="btn btn-chat" target="_blank" rel="noopener noreferrer">Chat Now</a>
             </div>
           </div>
@@ -488,8 +528,8 @@ ${menuHtml}
             <p>${escapeHtml(page.intro)}</p>
             <ul class="collection-highlight-list">${renderList(page.highlights)}</ul>
             <div class="collection-hero-actions">
-              <a href="contact us.html" class="btn">Request Formulation</a>
-              <a href="privetLable.html" class="secondary-link">Explore Private Label</a>
+              <a href="contact-us.html" class="btn">Request Formulation</a>
+              <a href="private-label.html" class="secondary-link">Explore Private Label</a>
             </div>
           </div>
           <div class="collection-hero-visual">

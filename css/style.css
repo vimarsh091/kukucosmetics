@@ -40,6 +40,28 @@ color: var(--secondry_color);
 font-family: var(--poppins);
 }
 
+/* Keeps structural page headings available to search engines and assistive technology without changing the visual layout. */
+.seo-visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+border: 0;
+}
+
+/* Maintains the original carousel-heading presentation after using the correct H2 hierarchy. */
+.banner-title {
+font-size: 45px;
+font-weight: 600;
+line-height: 1.48;
+color: var(--secondry_color);
+font-family: var(--poppins);
+}
+
 h2 {
 font-size: 40px;
 font-weight: 500;
