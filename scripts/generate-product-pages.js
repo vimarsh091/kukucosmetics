@@ -14,7 +14,7 @@ const menuHtml = `
                   <ul>
                     <li><a href="face-wash.html">Face Wash</a></li>
                     <li><a href="face-serum.html">Face Serum</a></li>
-                    <li><a href="sunscreen-Lotion.html">Sunscreen Lotion</a></li>
+                    <li><a href="sunscreen-lotion.html">Sunscreen Lotion</a></li>
                     <li><a href="face-cream.html">Face Cream</a></li>
                     <li><a href="face-toner.html">Face Toner</a></li>
                     <li><a href="face-gel.html">Face Gel</a></li>
@@ -25,8 +25,8 @@ const menuHtml = `
                 <li onclick="toggleSubmenu(event)">
                   <a href="#">Hair Care ▸</a>
                   <ul>
-                    <li><a href="Shampoo.html">Shampoo</a></li>
-                    <li><a href="Conditioner.html">Conditioner</a></li>
+                    <li><a href="shampoo.html">Shampoo</a></li>
+                    <li><a href="conditioner.html">Conditioner</a></li>
                     <li><a href="hair-serum.html">Hair Serum</a></li>
                     <li><a href="hair-oil.html">Hair Oil</a></li>
                   </ul>
@@ -57,7 +57,7 @@ const menuHtml = `
                     <li><a href="body-spray.html">Body Spray</a></li>
                     <li><a href="body-sunscreen-spray.html">Body Sunscreen Spray</a></li>
                     <li><a href="mosquito-repellent-cream.html">Mosquito Repellent Cream</a></li>
-                    <li><a href="Lotion.html">Lotion</a></li>
+                    <li><a href="lotion.html">Lotion</a></li>
                   </ul>
                 </li>
                 <li onclick="toggleSubmenu(event)">
@@ -81,8 +81,8 @@ const menuHtml = `
                   <a href="#">Baby Care ▸</a>
                   <ul>
                     <li><a href="baby-cream.html">Baby Cream</a></li>
-                    <li><a href="baby-Lotion.html">Baby Lotion</a></li>
-                    <li><a href="baby-Shampoo.html">Baby Shampoo (Sulfate Free)</a></li>
+                    <li><a href="baby-lotion.html">Baby Lotion</a></li>
+                    <li><a href="baby-shampoo.html">Baby Shampoo (Sulfate Free)</a></li>
                     <li><a href="baby-face-wash.html">Baby Face Wash</a></li>
                     <li><a href="baby-hair-oil.html">Baby Hair Oil</a></li>
                     <li><a href="baby-massage-oil.html">Baby Massage Oil</a></li>
@@ -93,7 +93,7 @@ const menuHtml = `
               </ul>
             </li>
             <li><a href="manufacturing.html">Manufacturing</a></li>
-            <li><a href="Quality.html">Quality</a></li>
+            <li><a href="quality.html">Quality</a></li>
             <li><a href="private-label.html">Private Label</a></li>
             <li><a href="contact-us.html">Contact</a></li>
           </ul>
@@ -136,7 +136,7 @@ const footerHtml = `
           <ul>
             <li><a href="private-label.html">Private Label</a></li>
             <li><a href="manufacturing.html">Manufacturing</a></li>
-            <li><a href="Quality.html">Quality</a></li>
+            <li><a href="quality.html">Quality</a></li>
           </ul>
         </div>
         <div class="footer-left-menu">
@@ -200,7 +200,7 @@ const pages = [
     ctaItems: ["Active concentration customization", "Texture and absorption profile selection", "Fragrance-free and sensitive-skin options", "Packaging in dropper, pump and airless", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "sunscreen-Lotion.html",
+    file: "sunscreen-lotion.html",
     title: "Sunscreen Lotion",
     eyebrow: "Sun Care Collection",
     image: "./image/sunscreen multiple.png",
@@ -327,7 +327,7 @@ const pages = [
     ctaItems: ["Oil blend customization", "Herbal extract infusion", "Fragrance and sensory customization", "Bottle, pump and dropper packaging", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Shampoo.html",
+    file: "shampoo.html",
     title: "Shampoo",
     eyebrow: "Hair Care Collection",
     image: "./image/hair shampoo 2.png",
@@ -343,7 +343,7 @@ const pages = [
     ctaItems: ["Sulfate-free, silicone-free and mild cleanser systems", "Active and herbal customization", "Adult, baby and pet-specific bases", "Bottle, pump and sachet packaging", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Conditioner.html",
+    file: "conditioner.html",
     title: "Conditioner",
     eyebrow: "Hair Care Collection",
     image: "./image/Hair conditioner 1.png",
@@ -375,7 +375,7 @@ const pages = [
     ctaItems: ["Sulfate-free and mild surfactant systems", "Active and botanical customization", "Fragrance and viscosity control", "Bottle, pump and tube packaging", "MOQ flexibility and regulatory support"],
   },
   {
-    file: "Lotion.html",
+    file: "lotion.html",
     title: "Body Lotion",
     eyebrow: "Body Care Collection",
     image: "./image/body lotion 3.png",
